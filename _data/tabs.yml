@@ -9,4 +9,4 @@
 - id: tab-test1
   name: diasble-test
   fp: tab/test1.html
-  disabled: true
+  disabled: false
