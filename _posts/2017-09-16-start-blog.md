@@ -1,0 +1,11 @@
+---
+layout: post
+title: Post documentation
+date:   2017-09-16
+categories: "start"
+tags: [ex, start blog]
+author: Ganace
+comment: true
+---
+
+开始blog目录测试页面start
