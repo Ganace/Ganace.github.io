@@ -13,6 +13,7 @@
           <ul>
             {% if site.github_username %}
             <li><a href="https://github.com/{{ site.github_username }}" class="white-text text-lighten-3 btn waves-effect waves-light {{ site.footer-button-color }} lighten-3"><i class="mdi mdi-github-circle"></i></a></li>
+            <li><a href="{{ '/about' | prepend: site.baseurl }}" class="white-text text-lighten-3 btn waves-effect waves-light {{ site.footer-button-color }} lighten-3"><i class="mdi mdi-telegram"></i></a></li>
             <!-- {% endif %}
             {% if site.googleplus_username %}
             <li><a href="https://plus.google.com/+{{ site.googleplus_username }}" class="white-text text-lighten-3 btn waves-effect waves-light {{ site.footer-button-color }} lighten-3"><i class="mdi mdi-google-plus"></i></a></li>
@@ -29,7 +30,7 @@
       <div class="container">
         Copyright © {{ site.author }}, <!-- under<a class="{{ site.footer-link-color }}" href="https://creativecommons.org/licenses/by-sa/4.0/"> CC BY-SA 4.0</a> --> Powered by <a class="{{ site.footer-link-color }}" href="http://jekyllrb.com/">Jekyll</a>.
         Icon pack by <a class="{{ site.footer-link-color }}" href="https://zh.icons8.com">Icons8</a> and <a class="{{ site.footer-link-color }}" href="https://github.com/sapegin/grunt-webfont">grunt-webfont</a> at <a href="http://materialdesignicons.com/">MaterialDesignIcons.com</a>.
-        <a class="btn waves-effect waves-light {{ site.footer-button-color }} lighten-1 right white-text" href="{{ '/about' | prepend: site.baseurl }}" >联系我</a>
+        <!-- <a class="btn waves-effect waves-light {{ site.footer-button-color }} lighten-1 right white-text" href="{{ '/about' | prepend: site.baseurl }}" >联系我</a> -->
       </div>
     </div>
   </footer>
