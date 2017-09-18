@@ -1,12 +1,12 @@
 # **NOTE**
 # 1. Empty strings are truthy.
 
-- id: tab-test
+- id: tab-welcome
   name: 欢迎页
-  fp: tab/test.html
+  fp: tab/welcome.html
   disabled: false
 
-- id: tab-test1
+- id: tab-disabled
   name: 隐藏页
-  fp: tab/test1.html
+  fp: tab/disabled.html
   disabled: true
