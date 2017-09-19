@@ -16,7 +16,7 @@ permalink: /about/
 
 求生之路：周周作一休，日日学厨诗。
 
-自得其乐的Ganace。
+一个自得其乐的Ganace。
 
 #### 主题
 
