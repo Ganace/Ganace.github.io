@@ -2,7 +2,7 @@
 layout: post
 title: 【文章模板】记录如何写md格式_post文章
 date:   2017-09-20
-categories: About Blog
+categories: AboutBlog
 tags: ["\_posts", markdown,文章模板]
 author: Ganace
 comment: true
