@@ -2,7 +2,7 @@
 layout: post
 title: 【readme】Post documentation
 date:   2016-12-15
-categories: 关于博客
+categories: About Blog
 tags: [jekyll, material design]
 author: Lambda
 comment: false

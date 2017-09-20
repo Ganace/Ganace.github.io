@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 【文章模板】记录如何写md格式_post文章
-date:   2016-12-15
-categories: 关于博客-文章模板
+date:   2017-09-20
+categories: About Blog
 tags: ["\_posts", markdown,文章模板]
 author: Ganace
 comment: true
