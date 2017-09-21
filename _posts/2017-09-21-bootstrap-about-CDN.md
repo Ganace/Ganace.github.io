@@ -38,12 +38,12 @@ comment: false
 ---
 
 {% highlight ruby %}
-<xmp><!-- jquery -->
-<xmp><script src="http://code.jquery.com/jquery-2.0.3.min.js"></script> 
+<xmp><!-- jquery --></xmp>
+<xmp><script src="http://code.jquery.com/jquery-2.0.3.min.js"></script></xmp>
 
-<xmp><!-- bootstrap -->
-<xmp><link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-<xmp><script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>  
+<xmp><!-- bootstrap --></xmp>
+<xmp><link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"></xmp>
+<xmp><script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script></xmp>  
 
 <xmp><!-- bootstrap-table --></xmp>
 <xmp><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css"></xmp>
