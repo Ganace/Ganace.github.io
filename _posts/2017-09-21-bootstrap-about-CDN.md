@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 【CDN安装】Bootstrap相关插件免费的CDN加速服务
+title: 【Bootstrap|CDN安装】Bootstrap相关插件免费的CDN加速服务
 date:   2017-09-21
 categories: Bootstrap
+categorieslink: Bootstrap
 tags: [Bootstrap, CDN,Bootstrap-Table,Bootstrap-Editable,Bootstrap-Table-Export]
 author: Ganace
 comment: false
@@ -57,6 +58,7 @@ comment: false
 <!-- bootstrap-table-Export -->
 <script src="https://cdn.bootcss.com/bootstrap-table/1.11.1/extensions/export/bootstrap-table-export.min.js"></script>
 <script src="https://cdn.bootcss.com/TableExport/3.1.3/js/tableexport.min.js"></script>
+
 {% endhighlight %}
 
 ---

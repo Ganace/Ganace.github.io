@@ -37,7 +37,7 @@ kramdown:
 sass:
   style: compressed
 
-permalink: /posts/:categories/:title.html
+permalink: /posts/:categorieslink/:title.html
 
 paginate: 7
 #paginate_path: 'page/:num'

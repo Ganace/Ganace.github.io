@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 【时间日期函数】PHP关于日期时间的各种计算
+title: 【PHP|时间日期函数】PHP关于日期时间的各种计算
 date:   2017-09-21
 categories: PHP
+categorieslink: PHP
 tags: [PHP, date,日期函数]
 author: Ganace
 comment: false
