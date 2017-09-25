@@ -36,6 +36,7 @@ comment: false
 ## 快速安装
 
 ---
+复制link，粘贴进HTML代码头部，就可以使用了。
 
 {% highlight ruby %}
 <!-- jquery -->

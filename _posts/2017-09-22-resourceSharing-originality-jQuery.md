@@ -15,25 +15,17 @@ comment: false
 
 ---
 - 勇敢跑步的兔子
-    : [在线演示][在线演示]
-    : [下载地址][下载地址]
-    [在线演示]: http://www.jq22.com/yanshi14051
-    [下载地址]: http://www.jq22.com/jquery-info14051
+    : [在线演示](http://www.jq22.com/yanshi14051)
+    : [下载地址](http://www.jq22.com/jquery-info14051)
 - jquery h5 超级玛丽
-    : [在线演示][在线演示]
-    : [下载地址][下载地址]
-    [在线演示]: http://www.jq22.com/yanshi11334
-    [下载地址]: http://www.jq22.com/jquery-info11334
+    : [在线演示](http://www.jq22.com/yanshi11334)
+    : [下载地址](http://www.jq22.com/jquery-info11334)
 - 简单打字游戏
-    : [在线演示][在线演示]
-    : [下载地址][下载地址]
-    [在线演示]: http://www.jq22.com/yanshi10618
-    [下载地址]: http://www.jq22.com/jquery-info10618
+    : [在线演示](http://www.jq22.com/yanshi10618)
+    : [下载地址](http://www.jq22.com/jquery-info10618)
 - 过关类见缝插针游戏
-    : [在线演示][在线演示]
-    : [下载地址][下载地址]
-    [在线演示]: http://www.jq22.com/yanshi9316
-    [下载地址]: http://www.jq22.com/jquery-info9316
+    : [在线演示](http://www.jq22.com/yanshi9316)
+    : [下载地址](http://www.jq22.com/jquery-info9316)
 
 ---
 
@@ -41,25 +33,17 @@ comment: false
 
 ---
 - 3D元素周期表
-    : [在线演示][在线演示]
-    : [下载地址][下载地址]
-    [在线演示]: http://www.jq22.com/yanshi4710
-    [下载地址]: http://www.jq22.com/jquery-info4710
+    : [在线演示](http://www.jq22.com/yanshi4710)
+    : [下载地址](http://www.jq22.com/jquery-info4710)
 - html5粒子效果背景
-    : [在线演示][在线演示]
-    : [下载地址][下载地址]
-    [在线演示]: http://www.jq22.com/yanshi9450
-    [下载地址]: http://www.jq22.com/jquery-info9450
+    : [在线演示](http://www.jq22.com/yanshi9450)
+    : [下载地址](http://www.jq22.com/jquery-info9450)
 - 简单的下拉列表效果插件
-    : [在线演示][在线演示]
-    : [下载地址][下载地址]
-    [在线演示]: http://www.jq22.com/yanshi339
-    [下载地址]: http://www.jq22.com/jquery-info339
+    : [在线演示](http://www.jq22.com/yanshi339)
+    : [下载地址](http://www.jq22.com/jquery-info339)
 - 一个很有意思的jquery洗牌图片切换插件
-    : [在线演示][在线演示]
-    : [下载地址][下载地址]
-    [在线演示]: http://www.jq22.com/yanshi10713
-    [下载地址]: http://www.jq22.com/jquery-info10713
+    : [在线演示](http://www.jq22.com/yanshi10713)
+    : [下载地址](http://www.jq22.com/jquery-info10713)
 
 ---
 
