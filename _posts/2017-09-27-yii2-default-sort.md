@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 【Yii2|默认排序】关于SQL数据提供者(SqlDataProvider)默认排序问题
+title: 【Yii2|SQL数据提供者】关于SQL数据提供者(SqlDataProvider)默认排序问题
 date:   2017-09-27
 categories: Yii2
-tags: [Yii2,default sort,默认排序]
+tags: [Yii2,default sort,默认排序,SQL数据提供者]
 author: Ganace
 comment: false
 ---
