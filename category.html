@@ -12,7 +12,7 @@ permalink: /category/
 {% capture categories %}{% for category in site.categories reversed %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign category = categories | split:',' | sort %}
 
-<div class="post-category">
+<div class="post-category re1">
   {% for item in (0..site.categories.size) %}{% unless forloop.last %}
 
     {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
