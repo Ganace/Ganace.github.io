@@ -18,8 +18,19 @@ comment: false
 ####  基本使用
 
 -在首页加后缀`?r=gii`，使用gii生成模型类。
--在生成的含有search名字的模型类中，寻找search方法,没有则自己添加
--在search方法中添加如下代码：
+-打开生成的含有search名字的文件头部添加`use yii\data\SqlDataProvider;`如下：
+{% highlight ruby %}
+
+<?php
+namespace app\models;
+use Yii;
+use yii\base\Model;
+use yii\data\ActiveDataProvider;
+use yii\data\SqlDataProvider;
+//...
+
+{% endhighlight %}
+-在生成的含有search名字的模型类中，寻找search方法,没有则自己添加在search方法中添加如下代码：
 {% highlight ruby %}
 
 $sql = 'SELECT * FROM `post` WHERE `date` LIKE '2017%''
