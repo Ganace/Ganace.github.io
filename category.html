@@ -10,7 +10,7 @@ permalink: /category/
 </div>
 
 {% capture categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-{% assign category = categories | split:',' | sort %}
+{% assign category = categories | split:',' | sort:SORT_ASC %}
 
 <div class="post-category">
   {% for item in (0..site.categories.size) %}{% unless forloop.last %}
