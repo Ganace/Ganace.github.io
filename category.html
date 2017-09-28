@@ -9,8 +9,8 @@ permalink: /category/
   <button class="waves-effect waves-light btn" onClick="collapseAll();"><i class="mdi mdi-chevron-double-up left"></i>折叠</button>
 </div>
 
-{% capture categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-{% assign category = categories | split:',' | sort:SORT_ASC %}
+{% capture categories %}{% for category in site.categories reversed %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign category = categories | split:',' | sort %}
 
 <div class="post-category">
   {% for item in (0..site.categories.size) %}{% unless forloop.last %}
