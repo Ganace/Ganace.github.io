@@ -2,7 +2,7 @@
 layout: post
 title: 【资源分享|jQuery插件】有趣的创意jQuery应用插件及源码分享
 date:   2017-09-21
-categories: ResourceSharing
+categories: ResourceAndSharing
 tags: [jQuery, 资源分享,有趣好玩]
 author: Ganace
 comment: false

@@ -2,7 +2,7 @@
 layout: post
 title: 【Yii2|SQL数据提供者】关于SQL数据提供者(SqlDataProvider)的基本使用(二)
 date:   2017-09-28
-categories: Yii2
+categories: PHP
 tags: [Yii2,SqlDataProvider,GridView]
 author: Ganace
 comment: false
