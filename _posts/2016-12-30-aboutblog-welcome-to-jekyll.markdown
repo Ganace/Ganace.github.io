@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  【AboutBlog|jekyll-update】"Welcome to Jekyll!"
+title: 【AboutBlog|jekyll-update】"Welcome to Jekyll!"
 date:   2016-12-13
 categories: Zero
 ---
