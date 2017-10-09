@@ -50,5 +50,9 @@ $(".button-collapse").off("click").sideNav();
 // Initialize collapsible (uncomment the line below if you use the dropdown variation)
 //$('.collapsible').collapsible();
 
-
+// 目录默认折叠
+$(document).ready(function() {
+  $(".collapsible-header").removeClass("active");
+  $(".collapsible").collapsible({ accordion: true });
+});
 
