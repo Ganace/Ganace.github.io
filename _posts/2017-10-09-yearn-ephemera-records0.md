@@ -1,16 +1,17 @@
 ---
 layout: post
-title: 【晴雨表|浮游碎笔】关于一些朝生而暮死的细碎思绪(一)
+title: 【眷眷往昔|浮游碎笔】关于一些朝生而暮死的细碎思绪(一)
 date:   2017-10-09
-categories: Barometer
-tags: [晴雨表,朝生暮死,浮游碎笔]
+categories: Yearn
+tags: [眷眷往昔,朝生暮死,浮游碎笔]
 author: Ganace
 update: 2017-10-09
 comment: false
 ---
 
-记录一些关于朝生而暮死的细碎思绪，长河拾忆。
+眷眷往昔时，忆此断人肠。——陶渊明《杂诗·其三》。
 
+记录一些关于朝生而暮死的细碎思绪，长河拾忆。
 
 ## First
 
