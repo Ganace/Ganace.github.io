@@ -11,3 +11,8 @@ function collapseAll() {
   $(".collapsible").collapsible({ accordion: true });
 }
 
+// 目录默认折叠
+$(document).ready(function() {
+  $(".collapsible-header").removeClass("active");
+  $(".collapsible").collapsible({ accordion: true });
+});
