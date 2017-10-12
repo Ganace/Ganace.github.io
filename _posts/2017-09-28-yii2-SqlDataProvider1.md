@@ -8,7 +8,7 @@ author: Ganace
 comment: false
 ---
 
-这里是一篇记录关于SQL数据提供者(SqlDataProvider)的基本使用的文章。
+这里是一篇Ganace记录的关于SQL数据提供者(SqlDataProvider)的基本使用的文章。
 
 
 ## Views

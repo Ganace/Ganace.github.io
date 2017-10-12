@@ -8,7 +8,7 @@ author: Ganace
 comment: false
 ---
 
-这里是一篇分享有趣的创意jQuery应用插件及源码的文章。
+这里是一篇Ganace分享的有趣的创意jQuery应用插件及源码的文章。
 
 
 ## 有趣的jQuery小游戏

@@ -8,7 +8,7 @@ author: Ganace
 comment: false
 ---
 
-这里是一篇记录PHP如何用file_put_contents()函数写入文件的文章。
+这里是一篇Ganace记录的PHP如何用file_put_contents()函数写入文件的文章。
 
 
 ## 获取系统今日日期时间

@@ -9,7 +9,7 @@ update: 2017-09-21
 comment: false
 ---
 
-这里是一篇记录如何写markdown格式文章，放入GitHub Page Blog"posts"文件夹中的文章。
+这里是一篇Ganace记录的如何写markdown格式文章，放入GitHub Page Blog"posts"文件夹中的文章。
 
 
 ## markdown文件头

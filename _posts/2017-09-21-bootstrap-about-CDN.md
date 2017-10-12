@@ -8,7 +8,7 @@ author: Ganace
 comment: false
 ---
 
-这里是一篇记录Bootstrap相关插件免费的CDN加速服务,方便快速安装、快速使用的文章。
+这里是一篇Ganace记录的Bootstrap相关插件免费的CDN加速服务,方便快速安装、快速使用的文章。
 
 
 ## 详细说明

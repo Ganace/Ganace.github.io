@@ -8,7 +8,7 @@ author: Ganace
 comment: false
 ---
 
-这里是一篇记录PHP的日期时间相关函数的各种使用的文章。
+这里是一篇Ganace记录的PHP的日期时间相关函数的各种使用的文章。
 
 
 ## 获取系统今日日期时间

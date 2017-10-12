@@ -8,7 +8,7 @@ author: Ganace
 comment: false
 ---
 
-这里是一篇记录关于CSS3阴影的基本使用与在线测试的文章。
+这里是一篇Ganace记录的关于CSS3阴影的基本使用与在线测试的文章。
 
 
 ## 代码
