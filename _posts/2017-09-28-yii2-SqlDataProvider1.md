@@ -15,7 +15,8 @@ comment: false
 
 ---
 ####  基本使用
--在views文件中寻找gii生成的index.php文件，把其中GridView::widget小部件修改如下:
+
+- 在views文件中寻找gii生成的index.php文件，把其中GridView::widget小部件修改如下:
 {% highlight ruby %}
 
 <?= GridView::widget([
@@ -59,10 +60,10 @@ comment: false
 {% endhighlight %}
 
 ####  代码说明
--其中`['class' => 'yii\grid\SerialColumn']`为表格提供头部信息
+- 其中`['class' => 'yii\grid\SerialColumn']`为表格提供头部信息
 
--其中`'dataProvider' => $dataProvider,`接收渲染数据模块，`'filterModel' => $searchModel,`接收查询过滤器模块
+- 其中`'dataProvider' => $dataProvider,`接收渲染数据模块，`'filterModel' => $searchModel,`接收查询过滤器模块
 
--其中'columns'提供各列属性。'attribute'定义该列使用数据提供者中哪一字段值，'value'定义显示在表格中的数据。'headerOptions'定义该列的头部样式。
+- 其中'columns'提供各列属性。'attribute'定义该列使用数据提供者中哪一字段值，'value'定义显示在表格中的数据。'headerOptions'定义该列的头部样式。
 
 ---

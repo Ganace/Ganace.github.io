@@ -15,23 +15,23 @@ comment: false
 
 ---
 ####  删除表数据
--`DROP TABLE tablename`
+- `DROP TABLE tablename`
     :删除整个表（表结构与表数据均删除）
     :tablename为表名
--`TRUNCATE TABLE tablename`
+- `TRUNCATE TABLE tablename`
     :清空表中的数据，保留表的数据结构，不保留标识计数值
     :tablename为表名
--`DELETE TABLE tablename`
+- `DELETE TABLE tablename`
     :删除表中的数据，保留标识计数值
     :逐行删除，可以回滚
     :tablename为表名
 
 ####  查询表的所有记录
--`SELECT * FROM tablename`
+- `SELECT * FROM tablename`
     :tablename为表名
 
 ####  查询表的所有记录数
--`SELECT COUNT(*) FROM tablename`
+- `SELECT COUNT(*) FROM tablename`
     :tablename为表名
 
 ---

@@ -45,11 +45,11 @@ $dataProvider = new SqlDataProvider([
 
 ####  代码说明
 
--在原来的SqlDataProvider基础使用上，添加'defaultOrder'属性到'sort'中,并在'defaultOrder'中列出需要默认排序的字段，以及排序规则
+- 在原来的SqlDataProvider基础使用上，添加'defaultOrder'属性到'sort'中,并在'defaultOrder'中列出需要默认排序的字段，以及排序规则
 
--代码中`'defaultOrder'=>['title' => SORT_ASC],`即表示默认打开渲染页面，表格中title字段的值按照递增排序
+- 代码中`'defaultOrder'=>['title' => SORT_ASC],`即表示默认打开渲染页面，表格中title字段的值按照递增排序
 
--关于排除规则
+- 关于排除规则
 	:SORT_ASC：递增排序，即按升序排列 (A-Z)
 	:SORT_DESC：递减排序，即按降序排列 (Z-A)
 
