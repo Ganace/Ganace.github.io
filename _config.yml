@@ -9,8 +9,8 @@ googleplus_username: google
 head-title: Ganace's blog
 title: Ganace
 
-baseurl: ""    # the subpath of your site, "/blog"
-url: ""
+baseurl: "https://ganace.github.io"    # the subpath of your site, "/blog"
+url: "https://ganace.github.io"
 
 # footer 
 description: 故乡美景：“江作青罗带，山如碧玉簪”。求学美食：荔枝木菠萝，卷粉炒米糖。求生之路：周周作一休，日日学厨诗。一个自得其乐的Ganace。
