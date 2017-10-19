@@ -9,7 +9,7 @@ googleplus_username: google
 head-title: Ganace's blog
 title: Ganace
 
-baseurl: "https://ganace.github.io"    # the subpath of your site, "/blog"
+baseurl: ""    # the subpath of your site, "/blog"
 url: "https://ganace.github.io"
 
 # footer 
