@@ -5,6 +5,7 @@ date:   2017-11-07
 categories: PHP
 tags: [PHP, CSV,表单导出]
 author: Ganace
+update: 2017-11-09
 comment: false
 ---
 
@@ -48,5 +49,14 @@ class OutputCSV
 
 {% endhighlight %}
 
+## 下载地址
+
 ---
 
+[https://github.com/Ganace/Ganace.github.io/blob/master/assets/php/OutputCSV.php](https://github.com/Ganace/Ganace.github.io/blob/master/assets/php/OutputCSV.php)
+
+---
+
+[【PHP|导出CSV】PHP导出CSV文件乱码解决办法](https://ganace.github.io/posts/php-get-csv-mess.html)
+
+---
