@@ -107,9 +107,9 @@ return $this->render('index', [
 
 ---
 
-[【【Yii2|SQL数据提供者】关于SQL数据提供者(SqlDataProvider)的基本使用(二)](https://ganace.github.io/posts/php/yii2-SqlDataProvider1.html)
+[【Yii2\|SQL数据提供者】关于SQL数据提供者(SqlDataProvider)的基本使用(二)](https://ganace.github.io/posts/php/yii2-SqlDataProvider1.html)
 
-[【Yii2|Yii2-Admin】关于（基于RBAC的权限管理扩展组件）Yii2-Admin的基本使用(一)](https://ganace.github.io/posts/php/yii2-yii2-admin0.html)
+[【Yii2\|Yii2-Admin】关于（基于RBAC的权限管理扩展组件）Yii2-Admin的基本使用(一)](https://ganace.github.io/posts/php/yii2-yii2-admin0.html)
 
 ---
 
