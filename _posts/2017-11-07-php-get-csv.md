@@ -57,6 +57,6 @@ class OutputCSV
 
 ---
 
-[【PHP|导出CSV】PHP导出CSV文件乱码解决办法](https://ganace.github.io/posts/php-get-csv-mess.html)
+[【PHP\|导出CSV】PHP导出CSV文件乱码解决办法](https://ganace.github.io/posts/php-get-csv-mess.html)
 
 ---

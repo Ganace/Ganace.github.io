@@ -41,7 +41,7 @@ $table_head = array(
 
 ---
 
-[【PHP|导出CSV】PHP导出CSV文件的封装类](https://ganace.github.io/posts/php-get-csv.html)
+[【PHP\|导出CSV】PHP导出CSV文件的封装类](https://ganace.github.io/posts/php-get-csv.html)
 
 ---
 
