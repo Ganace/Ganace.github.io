@@ -1,11 +1,11 @@
 ---
 layout: post
 title: 【浮游碎笔|杂记】关于一些朝生而暮死的细碎思绪二)
-date:   2017-10-09
+date:   2017-12-07
 categories: Ephemera
 tags: [朝生暮死,浮游碎笔]
 author: Ganace
-update: 2017-10-31
+update: 2017-12-11
 comment: false
 ---
 
