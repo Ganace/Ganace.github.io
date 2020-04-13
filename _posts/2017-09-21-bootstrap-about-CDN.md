@@ -2,7 +2,7 @@
 layout: post
 title: 【Bootstrap|CDN安装】Bootstrap相关插件免费的CDN加速服务
 date:   2017-09-21
-categories: HTML5
+categories: HTML5/CSS
 tags: [Bootstrap, CDN,Bootstrap-Table,Bootstrap-Editable,Bootstrap-Table-Export]
 author: Ganace
 comment: false
