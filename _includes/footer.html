@@ -1,0 +1,48 @@
+<footer class="page-footer {{ site.footer-color }}">
+    <div class="container">
+      <div class="row">
+        <div class="col l4 s12">
+          <h5 class="white-text">关于</h5>
+          <p class="grey-text text-lighten-4">
+              "{{ site.description }}"
+          </p>
+        </div>
+
+        <div class="col l4 s12 right">
+          <h5 class="white-text">联系方式</h5>
+          <ul>
+            {% if site.github_username %}
+            <!-- <li><a href="https://github.com/{{ site.github_username }}" class="white-text text-lighten-3 btn waves-effect waves-light {{ site.footer-button-color }} lighten-3"><i class="mdi mdi-github-circle"></i></a></li> -->
+            <li><a href="{{ '/about' | prepend: site.baseurl }}" class="white-text text-lighten-3 btn waves-effect waves-light {{ site.footer-button-color }} lighten-3"><i class="mdi mdi-telegram"></i></a></li>
+            <!-- {% endif %}
+            {% if site.googleplus_username %}
+            <li><a href="https://plus.google.com/+{{ site.googleplus_username }}" class="white-text text-lighten-3 btn waves-effect waves-light {{ site.footer-button-color }} lighten-3"><i class="mdi mdi-google-plus"></i></a></li>
+            {% endif %}
+            {% if site.twitter_username %}
+            <li><a href="https://twitter.com/{{ site.twitter_username }}" class="white-text text-lighten-3 btn waves-effect waves-light {{ site.footer-button-color }} lighten-3"><i class="mdi mdi-twitter"></i></a></li>
+            {% endif %} -->
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Copyright © {{ site.author }}, <!-- under<a class="{{ site.footer-link-color }}" href="https://creativecommons.org/licenses/by-sa/4.0/"> CC BY-SA 4.0</a> --> Powered by <a class="{{ site.footer-link-color }}" href="http://jekyllrb.com/">Jekyll</a>.
+        Icon pack by <a class="{{ site.footer-link-color }}" href="https://zh.icons8.com">Icons8</a> and <a class="{{ site.footer-link-color }}" href="https://github.com/sapegin/grunt-webfont">grunt-webfont</a> at <a href="http://materialdesignicons.com/">MaterialDesignIcons.com</a>.
+        <!-- <a class="btn waves-effect waves-light {{ site.footer-button-color }} lighten-1 right white-text" href="{{ '/about' | prepend: site.baseurl }}" >联系我</a> -->
+        <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+      </div>
+    </div>
+    <!-- 百度统计代码 -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?12371754b1aa9eb9b7c143b8507fd8fe";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+  </footer>
+

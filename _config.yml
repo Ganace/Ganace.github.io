@@ -1,0 +1,67 @@
+# Site settings
+
+author: Ganace
+email: ganace@foxmail.com
+twitter_username: twitter
+github_username:  Ganace
+googleplus_username: google
+
+head-title: Ganace's blog
+title: Ganace
+
+baseurl: ""    # the subpath of your site, "/blog"
+url: "https://ganace.github.io"
+
+# footer 
+description: 故乡美景：“江作青罗带，山如碧玉簪”。求学美食：荔枝木菠萝，卷粉炒米糖。求生之路：周周作一休，日日学厨诗。一个自得其乐的Ganace。
+
+favo: "杨花榆荚无才思，惟解漫天作雪飞"
+descrpt: "“独坐幽篁里，弹琴复长啸。深林人不知，明月来相照。”  ——王维《竹里馆》"
+
+
+#
+# Build settings
+#
+
+#exclude: [vendor]
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  highlight: true
+  auto_ids:  true
+
+sass:
+  style: compressed
+
+permalink: /posts/:categories/:title.html
+
+paginate: 7
+#paginate_path: 'page/:num'
+
+gems: [jekyll-paginate, jekyll-last-modified-at, jemoji]
+
+
+#
+# Custom
+#
+
+# Color
+# All css class, see: http://materializecss.com/color.html
+header-color: "indigo lighten-1"
+head-theme-color: "#26a69a"     # MUST in hex format, may the same as header-color. This color is for android chrome browser.
+
+footer-color: "indigo lighten-1"
+footer-button-color: "indigo lighten-2"
+footer-link-color: "red-text text-accent-1"
+
+share-button-color: "pink"
+share-button-small-color: ""
+
+
+##
+#excerpt_separator: <!-- excerpt_end -->       # for post.excerpt
+
