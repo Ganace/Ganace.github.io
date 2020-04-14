@@ -15,37 +15,37 @@ comment: false
 
 ---
 
-####1.创建新分支
+####  1.创建新分支
 {% highlight ruby %}
 
 git checkout --orphan latest_branch
 {% endhighlight %}
 
-####2.添加所有文件
+####  2.添加所有文件
 {% highlight ruby %}
 
 git add -A
 {% endhighlight %}
 
-####3.提交更改
+####  3.提交更改
 {% highlight ruby %}
 
 git commit -m "commit message"
 {% endhighlight %}
 
-####4.删除原有的master分支
+####  4.删除原有的master分支
 {% highlight ruby %}
 
 git branch -D master
 {% endhighlight %}
 
-####5.将当前分支重命名为master
+####  5.将当前分支重命名为master
 {% highlight ruby %}
 
 git branch -m master
 {% endhighlight %}
 
-####6.强制更新项目远程仓库
+####  6.强制更新项目远程仓库
 {% highlight ruby %}
 
 git push -f origin master
