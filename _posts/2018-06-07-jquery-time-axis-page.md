@@ -2,7 +2,7 @@
 layout: post
 title: 【资源分享|jQuery插件】jquery网站发展历史时间轴分享
 date:   2018-06-07
-categories: ResourceAndSharing
+categories: ResourceAndSharing,HTML5/CSS/JS/JQ
 tags: [jQuery,time axis,资源分享,有趣好玩]
 author: Ganace
 comment: false
