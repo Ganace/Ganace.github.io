@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【github】github，用git把本地项目连接到远程github项目上并提交
+title: 【github】用git把本地项目连接到远程github项目上并提交
 date:   2020-07-21
 categories: Github
 tags: [github,git]
