@@ -19,7 +19,7 @@
 
 #### 所有
 
-Copyright&nbsp;&copy;&nbsp;{{ site.author }}
+Copyright&nbsp;&copy;&nbsp;Ganace
 
 - - -
 
@@ -31,7 +31,7 @@ Copyright&nbsp;&copy;&nbsp;{{ site.author }}
 
 #### 个人信息
 
-Email: {{ site.email }}
+Email: Ganace@foxmail.com
 
 
 
