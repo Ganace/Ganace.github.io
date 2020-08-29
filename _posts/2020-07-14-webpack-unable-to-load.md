@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【webpack】关于github项目删除所有提交历史记录(commit)的方法
+title: 【webpack】无法加载文件 D:\nodejs\node_global\webpack.ps1，因为在此系统上禁止运行脚本
 date:   2020-07-14
 categories: Webpack
 tags: [vue,webpack]
@@ -8,9 +8,7 @@ author: Ganace
 comment: false
 ---
 
-webpack : 无法加载文件 D:\nodejs\node_
-global\webpack.ps1，因为在此系统上禁止
-运行脚本。
+webpack : 无法加载文件 D:\nodejs\node_global\webpack.ps1，因为在此系统上禁止运行脚本。
 
 
 ## 代码

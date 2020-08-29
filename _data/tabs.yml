@@ -6,7 +6,7 @@
   fp: tab/welcome.html
   disabled: false
 
-- id: tab-disabled
-  name: 隐藏页
-  fp: tab/disabled.html
-  disabled: true
+# - id: tab-disabled
+#   name: 隐藏页
+#   fp: tab/disabled.html
+#   disabled: true
