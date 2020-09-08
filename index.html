@@ -5,6 +5,16 @@ layout: default
 <div class="home container">
 
   <div class="page-heading">
+    <style>
+      @media only screen and (max-width: 400px){
+        .collapsible.popout>li{
+          margin: 0 14px;
+        }
+        .collapsible-header i{
+          margin-right: 0rem;
+        }
+      }
+    </style>
     <ul class="collapsible popout" data-collapsible="accordion">
       <li>
         <div class="collapsible-header favo"><i class="mdi mdi-weather-windy-variant"></i>{{ site.favo }}<i class="mdi mdi-pin right pink-text hide-on-small-only"></i></div>
