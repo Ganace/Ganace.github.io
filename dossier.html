@@ -1,0 +1,61 @@
+---
+layout: page
+title: 归档
+permalink: /dossier/
+---
+{% assign count = 1 %}
+{% assign years = '' %}
+{% for post in site.posts reversed %}
+    {% assign year = post.date | date: '%Y' %}
+    {% assign nyear = post.next.date | date: '%Y' %}
+    {% if year != nyear %}
+      {% assign count = count | append: ', ' %}
+      {% assign counts = counts | append: count %}
+      {% assign count = 1 %}
+      {% assign years = years | append: year %}
+      {% unless forloop.last %}
+      {% assign years = years | append: ', ' %}
+      {% endunless %}
+    {% else %}
+        {% assign count = count | plus: 1 %}
+    {% endif %}
+{% endfor %}
+
+{% assign counts = counts | split: ', ' | reverse %}
+{% assign years = years | split: ', ' | reverse %}
+{% assign i = 0 %}
+
+<div><style>button { margin-bottom: 10px; }</style>
+  <button class="waves-effect waves-light btn" onClick="expandAll();"><i class="mdi mdi-chevron-double-down left"></i>展开</button>
+  <button class="waves-effect waves-light btn" onClick="collapseAll();"><i class="mdi mdi-chevron-double-up left"></i>折叠</button>
+</div>
+
+<div class="post-category re1">
+  {% for year in years %}
+    {% assign year = year | strip | strip_newlines %}
+    <a id="year{{ year }}" class="section scrollspy"></a> 
+    <ul class="collapsible" data-collapsible="expandable">
+    <li>
+      <div class="collapsible-header active">
+        <span class="capitalize" style="font-size: 18px;">{{ year }}</span>
+        <a class="waves-circle btn-floating right waves-effect waves-green white"><p class="pink-text">{{ counts[i] }}</p></a>
+        {% assign i = i | plus: 1 %}
+      </div>
+      <div class="collapsible-body">
+        {% for post in site.posts %}
+        {% assign pyear = post.date | date: '%Y' %}
+        {% if post.title != null%} 
+        {% if pyear == year %}
+          <ul>
+            <li>
+              {{ post.date | date: "%Y-%m-%d" }}&nbsp;&nbsp;>>&nbsp;&nbsp;<a class="category-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </li>
+          </ul>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+      </div>
+    </li>
+    </ul>
+  {% endfor %}
+</div> 
