@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【浮游碎笔|杂记】关于一些朝生而暮死的细碎思绪(一)
+title: 【浮游碎笔】关于一些朝生而暮死的细碎思绪(一)
 date:   2017-10-09
 categories: Ephemera
 tags: [朝生暮死,浮游碎笔]

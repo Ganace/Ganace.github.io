@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【浮游碎笔|书单】为了激励自己读一些好书，列个书单吧！
+title: 【阅读书单】为了激励自己读一些好书，列个书单吧！
 date:   2017-10-10
 categories: Ephemera
 tags: [浮游碎笔,阅读书单]

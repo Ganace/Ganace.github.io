@@ -2,7 +2,7 @@
 layout: post
 title: 【Github】关于github项目删除所有提交历史记录(commit)的方法
 date:   2020-04-14
-categories: Github
+categories: Git/Github
 tags: [github,git,commit]
 author: Ganace
 comment: false
