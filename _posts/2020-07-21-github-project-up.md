@@ -18,6 +18,7 @@ github，用git把本地项目与远程github项目连接与提交
 ####  1.本地项目连接GitHub远程项目
 
 打开终端，cd到本地项目的文件夹
+
 git remote add origin 项目github-code地址
 
 {% highlight ruby %}
@@ -28,6 +29,7 @@ git remote add origin https://github.com/Ganace/test.git
 ####  2.拉取GitHub项目到本地
 
 打开终端，cd到准备存放项目的文件夹
+
 git clone 项目github-code地址
 
 {% highlight ruby %}
@@ -44,6 +46,7 @@ git clone https://github.com/Ganace/test.git
 git push -u origin master
 {% endhighlight %}
 然后就可以不加任何参数使用git push 完成代码上传到github
+
 push到GitHub的文件要求小于100M
 
 PS：几个常用git命令
