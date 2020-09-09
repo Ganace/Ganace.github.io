@@ -35,7 +35,8 @@ permalink: /category/
         {% for post in site.categories[word] %}{% if post.title != null %}
           <ul>
             <li>
-              {{ post.date | date: "%Y-%m-%d" }}&nbsp;&nbsp;>>&nbsp;&nbsp;<a class="category-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              <span class="font-number">{{ post.date | date: "%Y-%m-%d" }}&nbsp;&nbsp;>>&nbsp;&nbsp;</span>
+              <a class="category-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </li>
           </ul>
         {% endif %}{% endfor %}
