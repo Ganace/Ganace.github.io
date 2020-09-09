@@ -2,7 +2,7 @@
 layout: post
 title: 【AJAX】关于AJAX使用的小笔记
 date:   2018-07-19
-categories: HTML5/CSS/JS/JQ
+categories: CSS3/ES5/ES6/JQ
 tags: [jQuery,ajax]
 author: Ganace
 comment: false
