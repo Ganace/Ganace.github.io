@@ -2,7 +2,7 @@
  * Layout
  */
 
-::selection {
+ ::selection {
     color: #fff;
     background-color: $teal-accent;
 }
@@ -113,6 +113,9 @@ a.reversefootnote {
 /**
  * Site post list
  */
+ .font-number{
+     font-family: "Latin_Modern_Mono"
+ }
 .page-heading {
     margin-top: $spacing-unit;
 }
