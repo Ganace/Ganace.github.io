@@ -36,6 +36,7 @@ var jqajax = $.get('/data.html', {
     num: 1
 });
 {% endhighlight %}
+
 ---
 
 ## POST请求
