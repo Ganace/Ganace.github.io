@@ -53,45 +53,67 @@ comment: false
 - 链接
     : [链接](https://ganace.gitee.io/)
     : [链接](https://ganace.gitee.io/)
-    {% highlight ruby %}
-        [链接](https://ganace.gitee.io/)
-        [链接](https://ganace.gitee.io/)
-    {% endhighlight %}
+{% highlight ruby %}
+    [链接](https://ganace.gitee.io/)
+    [链接](https://ganace.gitee.io/)
+{% endhighlight %}
+
 - 图片
-    : ![Screenshot](https://ganace.github.io/Amusing-jQuary/The-frantic-run-of-the-valorous-rabbit/screenshot.jpg)
+    : ![Screenshot](https://i0.hdslb.com/bfs/archive/22650682fd25a4a5aa96dd9ef53190c6b8d54912.png)
     : ![image][pic0]
-    : ![布偶猫][/assets/postfile/202009/cat.jpg]
-    {% highlight ruby %}
-        ![Screenshot](https://ganace.github.io/Amusing-jQuary/The-frantic-run-of-the-valorous-rabbit/screenshot.jpg)
-        ![image][pic0]
-        [pic0]:data:image/png;base64,……
-        : ![布偶猫][/assets/postfile/202009/cat.jpg]
-    {% endhighlight %}
+    : ![布偶猫][{{ site.post_img_url }}/202009/cat.jpg]
+    : ![布偶猫][{{ "/202009/cat.jpg" | prepend: site.post_img_url }}]
+{% highlight ruby %}
+![Screenshot](https://i0.hdslb.com/bfs/archive/22650682fd25a4a5aa96dd9ef53190c6b8d54912.png)
+![image][pic0]
+[pic0]:data:image/png;base64,……
+![布偶猫][{{ site.post_img_url }}/202009/cat.jpg]
+![布偶猫][{{ "/202009/cat.jpg" | prepend: site.post_img_url }}]
+{% endhighlight %}
+
 - 代码
-    {% highlight ruby %}
-    console.log('Ganace');
-    {% endhighlight %}
+
+{% highlight ruby %}
+console.log('Ganace');
+{% endhighlight %}
+
 - 标题
+
     # 标题1
+
     ## 标题2
+
     ### 标题3
+
     #### 标题4
+
     ##### 标题5
+
     ###### 标题6
+
     {% highlight ruby %}
-    # 标题1
-    ## 标题2
-    ### 标题3
-    #### 标题4
-    ##### 标题5
-    ###### 标题6
+
+# 标题1
+
+## 标题2
+
+### 标题3
+
+#### 标题4
+
+##### 标题5
+
+###### 标题6
+
     {% endhighlight %}
 - 分行
+
     第一行 北冥有鱼，其名为鲲。鲲之大，不知其几千里也；化而为鸟，其名为鹏。鹏之背，不知其几千里也；怒而飞，其翼若垂天之云。是鸟也，海运则将徙于南冥。南冥者，天池也。《齐谐》者，志怪者也。《谐》之言曰：“鹏之徙于南冥也，水击三千里，抟扶摇而上者九万里，去以六月息者也。”
 
     第二行 野马也，尘埃也，生物之以息相吹也。天之苍苍，其正色邪？其远而无所至极邪？其视下也，亦若是则已矣。且夫水之积也不厚，则其负大舟也无力。覆杯水于坳堂之上，则芥为之舟，置杯焉则胶，水浅而舟大也。
     
     {% highlight ruby %}
+
     第一行 北冥有鱼，……
 
     第二行 野马也，尘埃也，……

@@ -12,6 +12,8 @@ title: Ganace
 baseurl: ""    # the subpath of your site, "/blog"
 url: "https://ganace.github.io"
 
+post_img_url: "https://ganace.gitee.io/assets/postfile"
+
 msg_board_url: "https://support.qq.com/products/277943?"
 
 # footer 
