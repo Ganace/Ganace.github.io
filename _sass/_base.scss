@@ -116,7 +116,7 @@ a {
 blockquote {
     font-family: $code-font-family;
     background-color: lighten($grey, 30%);
-    border-left: 4px solid #ee6e73;
+    border-left: 4px solid $pink-light1;
     padding-left: $spacing-unit / 2;
     letter-spacing: -1px;
     /*font-style: italic;*/

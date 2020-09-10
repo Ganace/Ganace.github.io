@@ -26,7 +26,7 @@ comment: false
     : 这是文章写作或者发布时间，格式如： `date: 2017-09-20` or `data: 2017-09-20 17:18:35`
 - `categories`
     : 这是文章隶属的类目名称，格式如： `categories: Ganace`, `categories: Ganace-post`
-    ：如果要把一篇文章放入多个类目，只要把类目之间空格就可以了。
+    : 如果要把一篇文章放入多个类目，只要把类目之间空格就可以了。
 - `tags` (可选)
     : 这是文章的标签，可选，格式如： `tags: [PHP, CURL]`.
 
@@ -61,14 +61,14 @@ comment: false
 - 图片
     : ![Screenshot](https://i0.hdslb.com/bfs/archive/22650682fd25a4a5aa96dd9ef53190c6b8d54912.png)
     : ![image][pic0]
-    : ![布偶猫][{{ site.post_img_url }}/202009/cat.jpg]
-    : ![布偶猫][{{ "/202009/cat.jpg" | prepend: site.post_img_url }}]
+    : ![布偶猫]({{ site.post_img_url }}/202009/cat.jpg)
+    : ![布偶猫]({{ "/202009/cat.jpg" | prepend: site.post_img_url }})
 {% highlight ruby %}
 ![Screenshot](https://i0.hdslb.com/bfs/archive/22650682fd25a4a5aa96dd9ef53190c6b8d54912.png)
 ![image][pic0]
 [pic0]:data:image/png;base64,……
-![布偶猫][{{ site.post_img_url }}/202009/cat.jpg]
-![布偶猫][{{ "/202009/cat.jpg" | prepend: site.post_img_url }}]
+![布偶猫]({{ site.post_img_url }}/202009/cat.jpg)
+![布偶猫]({{ "/202009/cat.jpg" | prepend: site.post_img_url }})
 {% endhighlight %}
 
 - 代码
@@ -79,17 +79,17 @@ console.log('Ganace');
 
 - 标题
 
-    # 标题1
+# 标题1
 
-    ## 标题2
+## 标题2
 
-    ### 标题3
+### 标题3
 
-    #### 标题4
+#### 标题4
 
-    ##### 标题5
+##### 标题5
 
-    ###### 标题6
+###### 标题6
 
     {% highlight ruby %}
 

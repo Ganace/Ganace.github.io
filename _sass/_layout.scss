@@ -293,7 +293,7 @@ a.reversefootnote {
     h2 {
         font-family: $head-font;
         font-size: 1.8rem;
-        color: #ee6e73;
+        color: $pink-light1;
         margin: 2.78rem 0 1.224rem;
 
         @media #{$medium-and-down} {
@@ -302,12 +302,13 @@ a.reversefootnote {
     }
 
     h3 {
+        color: $teal-accent;
         font-size: 1.8rem;
         margin: 2.68rem 0 1.2rem;
     }
 
     h4 {
-        color: #105a98;
+        color: $blue;
         font-family: $head-font;
         font-size: 1.4rem;
         margin: 1.68rem 0 1rem;
@@ -317,8 +318,14 @@ a.reversefootnote {
         }
     }
 
-    h5,
+    h5{
+        color: $teal-accent;
+        font-size: 1.2rem;
+        margin: 1.68rem 0 1rem;
+    }
+
     h6 {
+        color: $blue;
         font-size: 1.2rem;
         margin: 1.68rem 0 1rem;
     }
