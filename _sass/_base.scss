@@ -101,12 +101,12 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($blue, 20%);
+        // color: darken($blue, 10%);
     }
 
     &:hover {
         color: $pink;
-        text-decoration: underline;
+        // text-decoration: underline;
     }
 }
 

@@ -303,8 +303,13 @@ a.reversefootnote {
 
     h3 {
         color: darken($teal-accent,15%);
+        font-family: $head-font;
         font-size: 1.4rem;
         margin: 1.68rem 0 1rem;
+
+        @media #{$medium-and-down} {
+            font-size: 1.5rem;
+        }
     }
 
     h4 {
