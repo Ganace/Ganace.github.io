@@ -272,6 +272,12 @@ a.reversefootnote {
         font-size: 1.5rem;
         color: lighten($pink, 10%);
     }
+    .chip {
+        height: 20px;
+        font-size: 14px;
+        color: rgb(38 166 154);
+        line-height: 18px;
+    }
 }
 
 /* post title (head 1) */
