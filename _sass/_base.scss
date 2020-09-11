@@ -96,17 +96,17 @@ li {
 
 a {
     //color: darken($blue, 10%);
-    color: mix($blue,$teal-accent, 37%);
+    color: darken($blue,5%);
 
     text-decoration: none;
 
     &:visited {
-        //color: darken($blue, 20%);
+        color: darken($blue, 20%);
     }
 
     &:hover {
         color: $pink;
-        //text-decoration: underline;
+        text-decoration: underline;
     }
 }
 
