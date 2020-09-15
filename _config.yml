@@ -44,10 +44,10 @@ sass:
 permalink: /posts/:categories/:title.html
 
 paginate: 7
-#paginate_path: 'page/:num'
+paginate_path: 'page/:num'
 
 gems: [jekyll-paginate, jekyll-last-modified-at, jemoji]
-
+plugins: [jekyll-paginate]
 
 #
 # Custom
