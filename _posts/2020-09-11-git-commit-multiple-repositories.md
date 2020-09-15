@@ -2,7 +2,7 @@
 layout: post
 title: 【git】将项目同时提交到多个git远程仓库
 date:   2020-09-11
-categories: Git/Github
+categories: Git-Github
 tags: [git]
 author: Ganace
 comment: false

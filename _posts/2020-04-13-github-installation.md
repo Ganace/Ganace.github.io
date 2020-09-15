@@ -2,7 +2,7 @@
 layout: post
 title: 【Github】关于github的安装方法
 date:   2020-04-13
-categories: Git/Github
+categories: Git-Github
 tags: [github,git,msysgit]
 author: Ganace
 comment: false

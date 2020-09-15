@@ -2,7 +2,7 @@
 layout: post
 title: 【jQuery】关于jQuery插件扩展方法
 date:   2018-07-19
-categories: CSS3/ES5/ES6/JQ
+categories: CSS3-ES5-ES6-JQ
 tags: [jQuery]
 author: Ganace
 comment: false

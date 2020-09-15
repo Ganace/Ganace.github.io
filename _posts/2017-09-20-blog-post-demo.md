@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 【AboutBlog|文章模板】记录如何写md格式_post文章
+title: 【Blog|文章模板】记录如何写md格式_post文章
 date:   2017-09-20
-categories: Zero
+categories: Zero-Jekyll-Blog
 tags: [posts, markdown,文章模板]
 author: Ganace
 update: 2020-09-10
@@ -59,7 +59,7 @@ comment: false
 {% endhighlight %}
 
 - 图片
-    : ![Screenshot](https://i0.hdslb.com/bfs/archive/22650682fd25a4a5aa96dd9ef53190c6b8d54912.png)
+    : ![Screenshot](https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2247692397,1189743173&fm=5)
     : ![image][pic0]
     : ![布偶猫]({{ site.post_img_url }}/202009/cat.jpg)
     : ![布偶猫]({{ "/202009/cat.jpg" | prepend: site.post_img_url }})

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 【AboutBlog|readme】Post documentation
+title: 【Blog|readme】Post documentation
 date:   2016-12-15
-categories: Zero
+categories: Zero-Jekyll-Blog
 tags: [jekyll, material design]
 author: Lambda
 comment: false

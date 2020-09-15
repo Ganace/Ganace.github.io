@@ -2,7 +2,7 @@
 layout: post
 title: 【github】用git把本地项目与远程github项目连接与提交
 date:   2020-07-21
-categories: Git/Github
+categories: Git-Github
 tags: [github,git]
 author: Ganace
 comment: false

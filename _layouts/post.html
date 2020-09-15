@@ -18,7 +18,8 @@ layout: default
         {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}
         &nbsp;&nbsp;<i class="mdi mdi-label"></i>&nbsp;
         {% if page.categories %}<span class="capitalize">{{ page.categories }}</span>{% else %}unknown{% endif %}
-        {% if page.update %}&emsp;<i class="mdi mdi-refresh"></i>&nbsp;UPDATE: {{ page.update | date: "%b %-d, %Y" }}{% elseif page.last_modified_at %}&emsp;<i class="mdi mdi-refresh"></i>&nbsp;UPDATE: {{ page.last_modified_at | date: "%b %-d, %Y" }}{% endif %}
+        {% if page.update %}&emsp;<i class="mdi mdi-refresh"></i>&nbsp;UPDATE: {{ page.update | date: "%b %-d, %Y" }}
+        {% endif %}
       </p>
 
       {% if page.tags %}

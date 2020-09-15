@@ -2,7 +2,7 @@
 layout: post
 title: 【git】git在windows上的安装与配置
 date:   2020-04-12
-categories: Git/Github
+categories: Git-Github
 tags: [git]
 author: Ganace
 comment: false
