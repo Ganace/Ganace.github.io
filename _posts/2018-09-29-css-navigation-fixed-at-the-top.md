@@ -2,8 +2,8 @@
 layout: post
 title: 【CSS3】CSS导航如何固定在页面顶端
 date:   2018-09-29
-categories: CSS3-ES5-ES6-JQ
-tags: [CSS3,fixed,position]
+categories: Front-end-Foundation
+tags: [CSS3]
 author: Ganace
 comment: false
 ---

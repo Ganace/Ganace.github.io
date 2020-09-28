@@ -2,8 +2,8 @@
 layout: post
 title: 【PHP|导出CSV】PHP导出CSV文件的封装类
 date:   2017-11-07
-categories: PHP
-tags: [PHP, CSV,表单导出]
+categories: Back-end-Development
+tags: [PHP]
 author: Ganace
 update: 2017-11-09
 comment: false

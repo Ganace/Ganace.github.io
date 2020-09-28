@@ -25,7 +25,9 @@ layout: default
       {% if page.tags %}
         <i class="post-tag mdi mdi-tag-multiple waves-effect waves-light"></i>
         {% for tag in page.tags %}
-        <div class="chip">{{ tag }}</div>
+        <a href="{{ '/tags?tag=' | prepend: site.baseurl }}{{ tag }}" target="_blank" rel="">
+          <div class="chip">{{ tag }}</div>
+        </a>
         {% endfor %}
       {% endif %}
     </div>

@@ -2,35 +2,40 @@
  * Layout
  */
 
- ::selection {
-    color: #fff;
-    background-color: $teal-accent;
+::selection {
+  color: #fff;
+  background-color: $teal-accent;
 }
 ::-moz-selection {
-    color: #fff;
-    background-color: $teal-accent;
+  color: #fff;
+  background-color: $teal-accent;
 }
 
 /* Check */
 .notice-warning {
-    background-color: $pink;
-    color: #fff;
-    font-size: 120%;
-    font-weight: bold;
-    left: 0;
-    padding: 7px 0;
-    position: fixed;
-    text-align: center;
-    top: 0;
-    width: 100%;
-    z-index: 10;
+  background-color: $pink;
+  color: #fff;
+  font-size: 120%;
+  font-weight: bold;
+  left: 0;
+  padding: 7px 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 /* Helper */
-.lower-case { text-transform: lowercase; }
-.upper-case { text-transform: uppercase; }
-.capitalize { text-transform: capitalize; }
-
+.lower-case {
+  text-transform: lowercase;
+}
+.upper-case {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
 
 /**
  * Container and width
@@ -46,39 +51,48 @@ header, footer, {
 .page-container { padding-left: 160px; }
 */
 
-@media only screen and (max-width : 992px) {
-    header, .home, .post-container, .page-container, footer {
-        padding-left: 0;
-    }
+@media only screen and (max-width: 992px) {
+  header,
+  .home,
+  .post-container,
+  .page-container,
+  footer {
+    padding-left: 0;
+  }
 }
 
 @media only screen and (min-width: 993px) {
-    .home { width: 68%; }
-    .post-container { width: 72%; }
-    .page-container { width: 72%; }
+  .home {
+    width: 68%;
+  }
+  .post-container {
+    width: 72%;
+  }
+  .page-container {
+    width: 72%;
+  }
 }
 
 .post-container,
 .page-container {
-    @media #{$small-and-down} {
-        width: 100%;
-    }
+  @media #{$small-and-down} {
+    width: 100%;
+  }
 }
-
 
 /**
  * Site header
  */
 .site-title {
-    font-family: $site-title-font;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    font-size: 18px;
-    margin-left: 10px;
-    @media #{$medium-and-up} {
-        font-size: 24px;
-        margin-left: 20px;
-    }
+  font-family: $site-title-font;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  font-size: 18px;
+  margin-left: 10px;
+  @media #{$medium-and-up} {
+    font-size: 24px;
+    margin-left: 20px;
+  }
 }
 
 // FIXME: offsetting html anchor to adjust for fixed header
@@ -106,109 +120,125 @@ a.reversefootnote {
  * https://github.com/Dogfalo/materialize/issues/2879
  */
 #sidenav-overlay {
-    z-index: 996;
+  z-index: 996;
 }
-
 
 /**
  * Site post list
  */
- .font-number{
-     font-family: "Latin_Modern_Mono"
- }
+.font-number {
+  font-family: "Latin_Modern_Mono";
+}
+
+.date-arrow {
+  //  display: block;
+  @media #{$small-and-down} {
+    display: none;
+  }
+}
+
 .page-heading {
-    margin-top: $spacing-unit;
+  margin-top: $spacing-unit;
 }
 
 .favo {
-    letter-spacing: .2em;
+  letter-spacing: 0.2em;
 }
 
 .post-list {
-    margin-left: 0;
-    margin-top: 32px;
-    list-style: none;
+  margin-left: 0;
+  margin-top: 32px;
+  list-style: none;
 
-    > li {
-        margin-bottom: $spacing-unit;
-    }
+  > li {
+    margin-bottom: $spacing-unit;
+  }
 }
 
 .post-link {
-    font-family: $list-link-font;
-    display: block;
-    font-size: 1.5em;
-    margin-bottom: 10px;
+  font-family: $list-link-font;
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 10px;
 
-    color: $pink;
+  color: $pink;
 
-    &:hover {
-        color: $blue;
-    }
+  &:hover {
+    color: $blue;
+  }
 
-    @media #{$small-and-down} {
-        font-size: 1.3em;
-    }
+  @media #{$small-and-down} {
+    font-size: 1.3em;
+  }
 }
-
 
 /**
  * Site pagination
  */
 .pagination {
-    margin-top: 32px;
-    margin-bottom: 40px;
+  margin-top: 32px;
+  margin-bottom: 40px;
 
-    .page {
-        /* center the item (waitting other elegant method) */
-        left: 50%;
-        margin-left: -9.89rem;
-    }
+  .page {
+    /* center the item (waitting other elegant method) */
+    left: 50%;
+    margin-left: -9.89rem;
+  }
 }
-
 
 /**
  * Site footer
  */
 .page-footer {
-    ul {
-        margin-left: 0;
-    }
-    li {
-        margin-top: 10px;
-    }
+  ul {
+    margin-left: 0;
+  }
+  li {
+    margin-top: 10px;
+  }
 }
-
 
 /**
  */
 .tab-section {
-    @media #{$small-and-down} {
-        //padding: 70px 0px;
-    }
-    @media #{$medium-and-up} {
-        padding: 0px 56px;
-        margin-bottom: 60px;
-    }
+  @media #{$small-and-down} {
+    //padding: 70px 0px;
+  }
+  @media #{$medium-and-up} {
+    padding: 0px 56px;
+    margin-bottom: 60px;
+  }
 }
-
 
 /**
  * Category
  */
+.hidden {
+  display: none;
+}
+.tag-btn {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+  margin: 1px;
+}
+.tag-btn.active {
+  color: #e91e63;
+}
 .post-category {
-    ul li {
-        margin-top: 8px;
-        list-style-type: none !important;
-    }
+  ul li {
+    margin-top: 8px;
+    list-style-type: none !important;
+  }
 
-    .collapsible-body {
-        padding: 1rem;
-    }
+  .collapsible-body {
+    padding: 1rem;
+  }
 
-    @media #{$medium-and-up} {
-        .category-link {
-            /*
+  @media #{$medium-and-up} {
+    .category-link {
+      /*
             transition: padding-left 0.25s;
             -webkit-transition: padding-left 0.25s;
             -moz-transition: padding-left 0.25s;
@@ -218,138 +248,143 @@ a.reversefootnote {
                 padding-left: 12px;
             }
             */
-        }
     }
+  }
 
-    @media #{$small-and-down} {
-        .collapsible-body ul { margin-left: 10px; margin-right: 10px; }
+  @media #{$small-and-down} {
+    .collapsible-body ul {
+      margin-left: 10px;
+      margin-right: 10px;
     }
+  }
 }
-
 
 /**
  * Post
  */
 
 .post-ribbon {
-    //background-color: rgba(15, 99, 17, 0.51);
-    background-color: rgba(68, 68, 68, 0.41);
-    flex-shrink: 0;
-    height: 40vh;
-    width: 100%;
+  //background-color: rgba(15, 99, 17, 0.51);
+  background-color: rgba(68, 68, 68, 0.41);
+  flex-shrink: 0;
+  height: 40vh;
+  width: 100%;
 }
 
 .post-page {
-    margin-top: -35vh;
-    flex-shrink: 0;
-    min-height: 560px;
+  margin-top: -35vh;
+  flex-shrink: 0;
+  min-height: 560px;
 
-    @media #{$medium-and-up} {
-        margin-bottom: 40px;
-    }
+  @media #{$medium-and-up} {
+    margin-bottom: 40px;
+  }
 
-    @media #{$small-and-down} {
-        // remove z-depth-2 for mobile
-        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
-    }
+  @media #{$small-and-down} {
+    // remove z-depth-2 for mobile
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+      0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .post-section {
-    @media #{$small-and-down} {
-        //padding: 70px 0px;
-    }
-    @media #{$medium-and-up} {
-        padding: 0px 56px;
-        margin-bottom: 60px;
-    }
+  @media #{$small-and-down} {
+    //padding: 70px 0px;
+  }
+  @media #{$medium-and-up} {
+    padding: 0px 56px;
+    margin-bottom: 60px;
+  }
 }
 
 .post-header {
-    margin-top: $spacing-unit*1.5;
-    margin-bottom: $spacing-unit*1.6;
+  margin-top: $spacing-unit * 1.5;
+  margin-bottom: $spacing-unit * 1.6;
 
-    .post-tag {
-        font-size: 1.5rem;
-        color: lighten($pink, 10%);
-    }
-    .chip {
-        height: 20px;
-        font-size: 14px;
-        color: rgba(38, 166, 154, 1);
-        line-height: 18px;
-    }
+  .post-tag {
+    font-size: 1.5rem;
+    color: lighten($pink, 10%);
+  }
+  .chip {
+    height: 20px;
+    font-size: 14px;
+    color: rgba(38, 166, 154, 1);
+    line-height: 20px;
+  }
 }
 
 /* post title (head 1) */
 .post-title {
-    font-family: $head-font;
-    color: rgba(0, 0, 0, 0.76);
-    font-size: 2rem;
-    margin: 2.1rem 0 1.68rem;
+  font-family: $head-font;
+  color: rgba(0, 0, 0, 0.76);
+  font-size: 2rem;
+  margin: 2.1rem 0 1.68rem;
 
-    @media #{$medium-and-down} {
-        font-size: 2rem;
-    }
+  @media #{$medium-and-down} {
+    font-size: 2rem;
+  }
 }
 
 /* post and page content */
 .post-content {
-    margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit;
 
-    h2 {
-        font-family: $head-font;
-        font-size: 1.8rem;
-        color: $pink-light1;
-        margin: 2.78rem 0 1.224rem;
+  h2 {
+    font-family: $head-font;
+    font-size: 1.8rem;
+    color: $pink-light1;
+    margin: 2.78rem 0 1.224rem;
 
-        @media #{$medium-and-down} {
-            font-size: 1.8rem;
-        }
+    @media #{$medium-and-down} {
+      font-size: 1.8rem;
     }
+  }
 
-    h3 {
-        color: darken($teal-accent,15%);
-        font-family: $head-font;
-        font-size: 1.4rem;
-        margin: 1.68rem 0 1rem;
+  h3 {
+    color: darken($teal-accent, 15%);
+    font-family: $head-font;
+    font-size: 1.4rem;
+    margin: 1.68rem 0 1rem;
 
-        @media #{$medium-and-down} {
-            font-size: 1.5rem;
-        }
+    @media #{$medium-and-down} {
+      font-size: 1.5rem;
     }
+  }
 
-    h4 {
-        color: darken($blue,10%);
-        font-family: $head-font;
-        font-size: 1.4rem;
-        margin: 1.68rem 0 1rem;
+  h4 {
+    color: darken($blue, 10%);
+    font-family: $head-font;
+    font-size: 1.4rem;
+    margin: 1.68rem 0 1rem;
 
-        @media #{$medium-and-down} {
-            font-size: 1.5rem;
-        }
+    @media #{$medium-and-down} {
+      font-size: 1.5rem;
     }
+  }
 
-    h5{
-        color: darken($teal-accent,15%);
-        font-size: 1.2rem;
-        margin: 1.68rem 0 1rem;
-    }
+  h5 {
+    color: darken($teal-accent, 15%);
+    font-size: 1.2rem;
+    margin: 1.68rem 0 1rem;
+  }
 
-    h6 {
-        color: darken($blue,10%);
-        font-size: 1.2rem;
-        margin: 1.68rem 0 1rem;
-    }
+  h6 {
+    color: darken($blue, 10%);
+    font-size: 1.2rem;
+    margin: 1.68rem 0 1rem;
+  }
 
-    strong {
-        color: darken($red, 20%);
-    }
+  strong {
+    color: darken($red, 20%);
+  }
 
-    ul li { list-style-type: disc; }
+  ul li {
+    list-style-type: disc;
+  }
 }
 
 /* post share */
 .post-share {
-    margin-top: 100px;
-    letter-spacing: .2em;
+  margin-top: 100px;
+  letter-spacing: 0.2em;
 }

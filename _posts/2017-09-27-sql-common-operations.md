@@ -2,8 +2,8 @@
 layout: post
 title: 【SQL|常用操作】SQL数据库常用命令
 date:   2017-09-27
-categories: SQL
-tags: [SQL, common operations,常用操作]
+categories: Back-end-Development
+tags: [SQL]
 author: Ganace
 comment: false
 ---

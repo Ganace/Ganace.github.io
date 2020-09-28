@@ -2,8 +2,8 @@
 layout: post
 title: 【jQuery】jQuery的显示隐藏&淡入淡出&滑入滑出
 date:   2018-06-03
-categories: CSS3-ES5-ES6-JQ
-tags: [jQuery,show,fadeIn,slideDown]
+categories: Front-end-Foundation
+tags: [jQuery]
 author: Ganace
 comment: false
 ---

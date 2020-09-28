@@ -1,0 +1,52 @@
+---
+layout: page
+title: 标签
+permalink: /tags/
+---
+<!-- 标签按文章数排序 -->
+{% assign max_tag_count = 0 %}
+  {% for tag in site.tags %}
+    {% if tag[1].size > max_tag_count %}
+      {% assign max_tag_count = tag[1].size %}
+    {% endif %}
+ {% endfor %}
+{% for i in (1..max_tag_count) reversed %}
+{% for tag in site.tags %}
+{% if tag[1].size == i %}
+    <a href="javascript:void(0);" class="tag-btn-{{ tag[0] | escape }} tag-btn" onclick="expandOne('{{ tag[0] | escape }}')">
+        <i class="post-tag mdi mdi-tag-multiple waves-effect waves-light"></i>
+        {{ tag[0] }} <sup>{{ tag[1].size }}</sup>
+    </a>
+{% endif %}
+{% endfor %}
+{% endfor %}
+<div class="post-category re1">
+    {% for i in (1..max_tag_count) reversed %}
+    {% for tag in site.tags %}
+    {% if tag[1].size == i %}
+    <a id="tag-{{ tag[0] | escape }}" class="section scrollspy"></a> 
+    <ul class="tag-{{ tag[0] | escape }} collapsible {% if tag[1].size < 3 %} hidden {% endif %}" data-collapsible="expandable">
+    <li>
+      <div class="collapsible-header active">
+        <span class="capitalize" style="font-size: 18px;">{{ tag[0] }}</span>
+        <a class="waves-circle btn-floating right waves-effect waves-green white"><p class="pink-text">{{ tag[1].size }}</p></a>
+      </div>
+      <div class="collapsible-body">
+        {% for post in tag[1] %}
+        {% if post.title != null%} 
+          <ul>
+            <li>
+              <span class="font-number">{{ post.date | date: "%Y-%m-%d" }}</span>
+              <span class="date-arrow">&nbsp;>>&nbsp;</span>
+              <a class="category-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </li>
+          </ul>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </li>
+    </ul>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+</div> 

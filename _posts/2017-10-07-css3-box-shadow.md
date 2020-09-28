@@ -2,8 +2,8 @@
 layout: post
 title: 【CSS3】关于CSS3阴影的基本使用与在线测试
 date:   2017-10-07
-categories: CSS3-ES5-ES6-JQ
-tags: [CSS3,CSS3阴影,Box Shadow]
+categories: Front-end-Foundation
+tags: [CSS3,CSS3阴影]
 author: Ganace
 comment: false
 ---

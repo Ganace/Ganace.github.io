@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 【Yii2|SQL数据提供者】关于SQL数据提供者(SqlDataProvider)的基本使用(一)
+title: 【PHP|Yii2|SQL数据提供者】关于SQL数据提供者(SqlDataProvider)的基本使用(一)
 date:   2017-09-27
-categories: PHP
-tags: [Yii2,SqlDataProvider,SQL数据提供者]
+categories: Back-end-Development
+tags: [PHP,Yii2]
 author: Ganace
 update: 2017-09-28
 comment: false

@@ -2,8 +2,8 @@
 layout: post
 title: 【PHP|导出CSV】PHP导出CSV文件乱码解决办法
 date:   2017-11-09
-categories: PHP
-tags: [PHP, CSV,表单导出,乱码]
+categories: Back-end-Development
+tags: [PHP]
 author: Ganace
 comment: false
 ---

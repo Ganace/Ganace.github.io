@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 【Yii2|RABC】关于Yii2中RABC所有表的SQL语句
+title: 【PHP|Yii2|RABC】关于Yii2中RABC所有表的SQL语句
 date:   2017-10-14
-categories: PHP
-tags: [Yii2,RABC,SQL]
+categories: Back-end-Development
+tags: [PHP,Yii2,Yii2-Admin]
 author: Ganace
 comment: false
 ---

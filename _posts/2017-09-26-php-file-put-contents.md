@@ -2,8 +2,8 @@
 layout: post
 title: 【PHP|写入文件】PHP用file_put_contents()函数写入文件
 date:   2017-09-21
-categories: PHP
-tags: [PHP, file_put_contents,写入文件]
+categories: Back-end-Development
+tags: [PHP]
 author: Ganace
 comment: false
 ---

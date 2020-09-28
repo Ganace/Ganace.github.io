@@ -3,6 +3,29 @@ layout: page
 title: 归档
 permalink: /dossier/
 ---
+
+<!-- 标签按文章数排序 -->
+{% assign max_tag_count = 0 %}
+  {% for tag in site.tags %}
+    {% if tag[1].size > max_tag_count %}
+      {% assign max_tag_count = tag[1].size %}
+    {% endif %}
+ {% endfor %}
+{% for i in (1..max_tag_count) reversed %}
+{% for tag in site.tags %}
+{% if tag[1].size == i and tag[1].size > 1 %}
+  <a href="{{ '/tags?tag=' | prepend: site.baseurl }}{{ tag[0] }}" target="_blank" class="tag-btn">
+    <i class="post-tag mdi mdi-tag-multiple waves-effect waves-light"></i>
+    {{ tag[0] }} <sup>{{ tag[1].size }}</sup>
+  </a>
+{% endif %}
+{% endfor %}
+{% endfor %}
+<a href="{{ '/tags' | prepend: site.baseurl }}" target="_blank" class="tag-btn">
+  <i class="post-tag mdi mdi-tag-multiple waves-effect waves-light"></i> ……
+</a>
+
+<!-- 年限归档 -->
 {% assign count = 1 %}
 {% assign years = '' %}
 {% for post in site.posts reversed %}
@@ -25,7 +48,8 @@ permalink: /dossier/
 {% assign years = years | split: ', ' | reverse %}
 {% assign i = 0 %}
 
-<div><style>button { margin-bottom: 10px; }</style>
+<div style="padding-top: 1rem;">
+  <style>button { margin-bottom: 10px; }</style>
   <button class="waves-effect waves-light btn" onClick="expandAll();"><i class="mdi mdi-chevron-double-down left"></i>展开</button>
   <button class="waves-effect waves-light btn" onClick="collapseAll();"><i class="mdi mdi-chevron-double-up left"></i>折叠</button>
 </div>
@@ -48,7 +72,8 @@ permalink: /dossier/
         {% if pyear == year %}
           <ul>
             <li>
-              <span class="font-number">{{ post.date | date: "%Y-%m-%d" }}&nbsp;&nbsp;>>&nbsp;&nbsp;</span>
+              <span class="font-number">{{ post.date | date: "%Y-%m-%d" }}</span>
+              <span class="date-arrow">&nbsp;>>&nbsp;</span>
               <a class="category-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </li>
           </ul>
