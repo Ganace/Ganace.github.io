@@ -13,7 +13,7 @@ permalink: /tags/
 {% for i in (1..max_tag_count) reversed %}
 {% for tag in site.tags %}
 {% if tag[1].size == i %}
-    <a href="javascript:void(0);" class="tag-btn-{{ tag[0] | escape }} tag-btn" onclick="expandOne('{{ tag[0] | escape }}')">
+    <a href="#tag-{{ tag[0] | escape }}" class="tag-btn-{{ tag[0] | escape }} tag-btn" onclick="expandOne('{{ tag[0] | escape }}')">
         <i class="post-tag mdi mdi-tag-multiple waves-effect waves-light"></i>
         {{ tag[0] }} <sup>{{ tag[1].size }}</sup>
     </a>
