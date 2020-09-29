@@ -101,5 +101,8 @@ DevKit是一个在Widow上帮助简化安装及使用RuyC/C++扩展如RDicout和
 
 同一个组件不同版本的组件依赖可能有不同，如果有些报错不知道怎么解决，可以按照Gemfile.lock文件中的组件列表一一在[https://rubygems.org/](https://rubygems.org/)上搜索排查，是否组件依赖版本安装错误或者少了依赖项。
 
+gem安装如果很慢的话，可以更新gem源：
+
+`gem sources --add https://mirrors.tuna.tsinghua.edu.cn/rubygems/ --remove https://rubygems.org/`
 
 ---
