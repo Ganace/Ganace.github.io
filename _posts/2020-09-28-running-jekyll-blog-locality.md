@@ -53,6 +53,24 @@ DevKit是一个在Widow上帮助简化安装及使用RuyC/C++扩展如RDicout和
 
 ---
 
+## 安装jekyll
+
+---
+
+在cmd.exe终端控制台中输入`gem install jekyll`回车安装。
+
+安装对应版本的jekyll依赖，查看版本依赖安装 [https://rubygems.org/gems/jekyll](https://rubygems.org/gems/jekyll)，按照依赖列表逐一安装需要的组件。
+
+  : ![jekyll]({{ site.post_img_url }}/202009/jekyll.png)
+
+查看jekyll版本`jekyll -v`,有版本号表示安装成功
+
+C:\>jekyll -v
+
+jekyll 1.2.0
+
+---
+
 ## 安装jekyll博客项目依赖
 
 ---

@@ -1,10 +1,32 @@
 ---
 layout: page
-title: 分类
+title: 类目
 permalink: /category/
 ---
 
-<div><style>button { margin-bottom: 10px; }</style>
+<!-- 标签按文章数排序 -->
+{% assign max_tag_count = 0 %}
+  {% for tag in site.tags %}
+    {% if tag[1].size > max_tag_count %}
+      {% assign max_tag_count = tag[1].size %}
+    {% endif %}
+ {% endfor %}
+{% for i in (1..max_tag_count) reversed %}
+{% for tag in site.tags %}
+{% if tag[1].size == i and tag[1].size > 1 %}
+  <a href="{{ '/tags?tag=' | prepend: site.baseurl }}{{ tag[0] }}" target="_blank" class="tag-btn">
+    <i class="post-tag mdi mdi-tag-multiple waves-effect waves-light"></i>
+    {{ tag[0] }} <sup>{{ tag[1].size }}</sup>
+  </a>
+{% endif %}
+{% endfor %}
+{% endfor %}
+<a href="{{ '/tags' | prepend: site.baseurl }}" target="_blank" class="tag-btn">
+  <i class="post-tag mdi mdi-tag-multiple waves-effect waves-light"></i> ……
+</a>
+
+<div style="padding-top: 1rem;">
+  <style>button { margin-bottom: 10px; }</style>
   <button class="waves-effect waves-light btn" onClick="expandAll();"><i class="mdi mdi-chevron-double-down left"></i>展开</button>
   <button class="waves-effect waves-light btn" onClick="collapseAll();"><i class="mdi mdi-chevron-double-up left"></i>折叠</button>
 </div>
