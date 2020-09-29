@@ -2,168 +2,187 @@
  * Base
  */
 
-
 /* Reset some basic elements */
 
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
 }
-
 
 /* Basic styling */
 
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
 }
-
 
 /* Set `margin-bottom` to maintain vertical rhythm */
 
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit / 2;
 }
-
 
 /* Text */
 
 strong {
-    //font-weight: bold;
+  //font-weight: bold;
 }
 
 p {
-    padding: 0;
+  padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: rgba(0, 0, 0, 0.8);
-    font-weight: 300;
-    line-height: 1.1;
-    letter-spacing: -1px;
-    //border-bottom: 1px solid #aaa;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  //border-bottom: 1px solid #aaa;
 }
 
 hr {
-    margin: 16px 0 8px;
+  margin: 16px 0 8px;
 }
-
 
 /* Images */
 
 img {
-    max-width: 100%;
-    vertical-align: middle;
+  max-width: 100%;
+  vertical-align: middle;
 }
-
 
 /* Figures */
 
 figure > img {
-    display: block;
+  display: block;
 }
 
 figcaption {
-    font-size: $small-font-size;
+  font-size: $small-font-size;
 }
-
 
 /* Lists */
 
-ul, ol {
-    margin-left: $spacing-unit;
+ul,
+ol {
+  margin-left: $spacing-unit;
 }
 
 li {
-    > ul,
-    > ol {
-        margin-bottom: 0;
-    }
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
 }
-
 
 /* Links */
 
 a {
-    //color: darken($blue, 10%);
-    color: darken($blue,5%);
+  //color: darken($blue, 10%);
+  color: darken($blue, 5%);
 
-    text-decoration: none;
+  text-decoration: none;
 
-    &:visited {
-        // color: darken($blue, 10%);
-    }
+  &:visited {
+    // color: darken($blue, 10%);
+  }
 
-    &:hover {
-        color: $pink;
-        // text-decoration: underline;
-    }
+  &:hover {
+    color: $pink;
+    // text-decoration: underline;
+  }
 }
-
 
 /* Blockquotes */
 
 blockquote {
-    font-family: $code-font-family;
-    background-color: lighten($grey, 30%);
-    border-left: 4px solid $pink-light1;
-    padding-left: $spacing-unit / 2;
-    letter-spacing: -1px;
-    /*font-style: italic;*/
+  font-family: $code-font-family;
+  background-color: lighten($grey, 30%);
+  border-left: 4px solid $pink-light1;
+  padding-left: $spacing-unit / 2;
+  letter-spacing: -1px;
+  /*font-style: italic;*/
 
-    > :last-child {
-        margin-bottom: 0;
-        border-left: 0;
-    }
+  > :last-child {
+    margin-bottom: 0;
+    border-left: 0;
+  }
 }
-
 
 /* Code formatting */
 
 pre,
 code {
-    font-family: $code-font-family;
-    border-radius: 3px;
+  font-family: $code-font-family;
+  border-radius: 3px;
 }
 
 code {
-    font-size: .9rem;
-    padding: 1px 5px;
-    background-color: #f7f2f4;
-    color: $pink;
+  font-size: 0.9rem;
+  padding: 1px 5px;
+  background-color: #f7f2f4;
+  color: $pink;
 }
 
 pre {
-    padding: 8px 12px;
-    //overflow-x: scroll;
-    font-size: 1rem;
-    border: 1px solid $grey-light;
-    background-color: #efefef;  /*#c8e6c9;*/
+  padding: 8px 12px;
+  //overflow-x: scroll;
+  font-size: 1rem;
+  border: 1px solid $grey-light;
+  background-color: #efefef; /*#c8e6c9;*/
 
-    > code {
-        font-size: inherit;
-        color: inherit;
-        background-color: inherit;      
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-        display: block;
-    }
-    td, th {
-        padding: 0px 0px;
-    }
+  > code {
+    font-size: inherit;
+    color: inherit;
+    background-color: inherit;
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+    display: block;
+  }
+  td,
+  th {
+    padding: 0px 0px;
+  }
 }
-
 
 /* Wrapper */
 
@@ -186,18 +205,15 @@ pre {
 }
 */
 
-
 /* Clearfix */
 
 %clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
-
 
 /* Icons */
 
@@ -218,10 +234,10 @@ pre {
 */
 
 .emoji {
-    vertical-align: text-top;
+  vertical-align: text-top;
 }
 
 .footnote {
-    font-size: 14px;
-    padding: 0 5px;
+  font-size: 14px;
+  padding: 0 5px;
 }

@@ -10,9 +10,10 @@ module Jekyll
   module TOCGenerator
 
     TOC_CONTAINER_HTML = '''
-            <div id="toc-container" class="hide-on-med-and-down">
-              <a href="#!" class="dropdown-button btn post-toc white teal-text" data-activates="dropdown-toc">
-                <i class="mdi mdi-menu-up right"></i><span class="">Content</span>
+            <div id="toc-container" class="">
+              <a href="#!" class="dropdown-button btn post-toc teal-text" data-activates="dropdown-toc">
+                <i class="mdi mdi-format-list-bulleted"></i>
+                <i class="mdi mdi-menu-up"></i>
               </a>
               <ul id="dropdown-toc" class="dropdown-content">%1</ul>
             </div>
