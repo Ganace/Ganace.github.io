@@ -2,8 +2,8 @@
 layout: post
 title: 【webpack】webpack打包出现WARNING in configuration The 'mode' option has not been set, webpack will fallback to 'production' for this value. 错误
 date:   2020-07-16
-categories: Webpack
-tags: [vue,webpack]
+categories: Front-end-Foundation
+tags: [webpack]
 author: Ganace
 comment: false
 ---

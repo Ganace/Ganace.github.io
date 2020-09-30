@@ -15,13 +15,13 @@ $(document).ready(function() {
 /* Materialize */
 
 // modal
-$(document).ready(function(){
+$(function(){
    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
    $('.modal').modal();
  });
 
 // toc dropdown
-$(document).ready(function(){
+$(function(){
   $('.post-toc').dropdown({
     inDuration: 300,
     outDuration: 225,
@@ -34,7 +34,7 @@ $(document).ready(function(){
 });
 
 // scrollspy
-$(document).ready(function(){
+$(function(){
   $('.scrollspy').scrollSpy({
     scrollOffset: 150,
   });

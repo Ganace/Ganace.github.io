@@ -2,8 +2,8 @@
 layout: post
 title: 【webpack】无法加载文件 D:\nodejs\node_global\webpack.ps1，因为在此系统上禁止运行脚本
 date:   2020-07-14
-categories: Webpack
-tags: [vue,webpack]
+categories: Front-end-Foundation
+tags: [webpack]
 author: Ganace
 comment: false
 ---

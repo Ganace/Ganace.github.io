@@ -44,13 +44,15 @@ comment: false
 ---
 
 
-## markdown文件内容
+### markdown文件内容
 
 ---
 
 可以使用所有markdown格式的内容
 
-## 链接
+## 链接\图片\代码
+
+### 链接
 
 [链接](https://ganace.gitee.io/)
 
@@ -61,7 +63,7 @@ comment: false
 [链接](https://ganace.gitee.io/)
 ```
 
-## 图片
+### 图片
 
 ![Screenshot](https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2247692397,1189743173&fm=5)
 
@@ -79,7 +81,21 @@ comment: false
 ![布偶猫]({{ "/202009/cat.jpg" | prepend: site.post_img_url }})
 ```
 
-## 代码
+### 代码
+
+#### 输出双大括号
+
+{%raw%}
+  {{  message  }}
+{%endraw%}
+```js
+{％raw％}{%raw%}
+  {{  message  }}
+{%endraw%}{％endraw％}
+```
+％替换成%
+
+#### 代码
 
 ```javascript
 ~~~javascript
@@ -140,7 +156,7 @@ SELECT COUNT(*) FROM tablename
 ```
 ~~~
 
-## 标题
+### 标题
 
 # 标题1
 
@@ -175,7 +191,9 @@ SELECT COUNT(*) FROM tablename
 第二行 野马也，尘埃也，……
 ```
 
-## 添加类名
+## 添加类名\引用\标注
+
+### 添加类名
 
 {: .my-class}
 hello
@@ -184,7 +202,7 @@ hello
 {: .my-class}
 hello
 ```
-## 引用
+### 引用
 
  北冥有鱼，其名为鲲。[^1]
 
@@ -195,7 +213,7 @@ hello
     庄子，《逍遥游》
 ```
 
-## 标注
+### 标注
 
 到头来，依旧是风尘骯髒违心愿。**<sup>按：骯，口朗切，仄声，音慷。骯髒，义即不屈</sup>**好一似，无瑕美玉遭泥陷；又何须，王孙公子叹无缘？
 

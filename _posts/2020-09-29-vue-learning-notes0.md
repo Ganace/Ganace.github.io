@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【Vue】Vue学习笔记（一）
+title: 【Vue】Vue学习笔记（零）Vue学习笔记大纲
 date:   2020-09-29
 categories: Front-end-Foundation
 tags: [Vue]
@@ -8,117 +8,386 @@ author: Ganace
 comment: false
 ---
 
-前段时间因为工作需要学习了前端Vue框架，目前有正在开发的项目也是用的Vue框架，因为一定程度的开发经验，现在有一点空闲时间，正好总结梳理一下Vue的一些学习笔记。第一篇，内容包括Vue的一些基础学习：Vue实例创建、Vue生命周期。
+前段时间因为工作需要学习了前端Vue框架，目前有正在开发的项目也是用的Vue框架，因为一定程度的开发经验，现在有一点空闲时间，正好总结梳理一下Vue的一些学习笔记。第零篇，内容包括Vue的一些基础学习大纲，用于以后复习查漏补缺。
 
 
+## 认识Vuejs
 
-## Vue介绍与安装
-
-
-
----
-
-#### Vue介绍
-
-Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。
-
-#### Vue兼容
-
-Vue 不支持 IE8 及以下版本，因为 Vue 使用了 IE8 无法模拟的 ECMAScript 5 特性。但它支持所有兼容 ECMAScript 5 的浏览器。
-
-####  Vue安装
-
-##### CDN引入
-
-{% highlight ruby %}
-
-<!-- 开发环境版本，包含了有帮助的命令行警告 -->
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-<!-- 生产环境版本，优化了尺寸和速度 -->
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-
-{% endhighlight %}
-
-##### NPM安装
-
-安装Vue最新稳定版
-{% highlight ruby %}
-
-npm install vue
-
-{% endhighlight %}
+### 一、认识Vuejs
 
 ---
 
-## 安装jekyll
+#### 1.1 认识Vuejs
+
+- 【Vue的读音】、【Vue的渐进式】、【Vue的特点】
+
+#### 1.2 安装Vue
+
+- 【CDN引入】、【下载引入】、【npm安装】
+
+#### 1.3 Vue初体验
+
+- 【Hello Vuejs】、【Vue列表展示】、【Vue计数器小案例】
+
+  mustache->体验Vue响应式
+
+  v-for 后面给数组追加元素的时候，新的元素也可以在界面中渲染出来
+
+  事件监听：click-> methods
+
+#### 1.4 Vue中的MVVM
+
+#### 1.5 Vue创建时的options
+
+- 【el:】、【data:】、【methods:】、【生命周期函数】
 
 ---
 
-在cmd.exe终端控制台中输入`gem install jekyll`回车安装。
+## 插值语法\v-bind
 
-安装对应版本的jekyll依赖，查看版本依赖安装 [https://rubygems.org/gems/jekyll](https://rubygems.org/gems/jekyll)，按照依赖列表逐一安装需要的组件。
-
-  : ![jekyll]({{ site.post_img_url }}/202009/jekyll.png)
-
-查看jekyll版本`jekyll -v`,有版本号表示安装成功
-
-C:\>jekyll -v
-
-jekyll 1.2.0
+### 二、插值语法
 
 ---
 
-## 安装jekyll博客项目依赖
+- 【mustache语法】
+
+- 【v-once】、【v-html】、【v-text】、【v-pre】、【v-cloak:斗篷】
 
 ---
 
-#### 安装 bundle
-
-按照fork的博客项目的readme中的要求，要运行jekyll还需要安装bundle。
-
-在cmd.exe终端控制台中输入`gem install bundle`回车安装。
-
-安装bundle的依赖bundler，输入`gem install bundler`回车安装。
-
-#### 在windows终端打开项目
-
-打开cmd.exe，cd到博客项目的文件夹。例：`D:\Ganace.github.io>`。
-
-或者用vscode开发工具的，只要把博客项目文件拖到工作区，右键文件夹->在集成终端中打开就行。
-
-#### 安装jekyll博客项目依赖
-
-运行开始之前需要安装博客项目的依赖，可以输入`bundle install`回车，bundle会按照项目Gemfile.lock文件中要求的依赖项以及各依赖项要求的版本来安装。
+### 三、v-bind
 
 ---
 
-## 运行jekyll博客项目
+#### v-bind绑定基本属性
+
+- 【v-bind:src】、【:href】
+
+#### v-bind 动态绑定class
+
+- 【对象语法：作业：class='{类名：boolean}'】、【数组语法：】
+
+#### v-bind 动态绑定style
 
 ---
 
-#### 运行jekyll博客项目
 
-在windows终端打开项目，例：`D:\Ganace.github.io>`。
+## 计算属性\事件监听\条件判断
 
-输入`bundle exec jekyll s`回车可以直接运行项目
+### 四、计算属性
 
-如果需要加上草稿箱(_drafts)中的文章,那么就输入`bundle exec jekyll s --drafts`回车运行
+---
 
-#### 运行报错问题
+- 【案例一：firstName+lastName】、【案例二：books->price】
 
-运行jekyll不成功报如下类似错误`Could not find i18n-0.7.0 in any of the sources`基本上是因为没有安装对应的组件，只要控制台输入`gem install i18n --version 0.7.0`回车安装就行。
+- 【延伸：ES6语法】：let/const，对象的字面量增强写法，for循环let in、let for
 
-`gem install 包名或组件名 --version  版本号`
+#### 4.1.计算属性的本质
 
-如果不清楚版本，或是版本错误，可以到Ruby社区Gem托管[https://rubygems.org/](https://rubygems.org/)上搜索包名或组件名，选择对应的版本安装，或者查找目前需要的组件所对应的依赖安装。
-  : ![组件安装1]({{ site.post_img_url }}/202009/gem1.png)
-  : ![组件安装2]({{ site.post_img_url }}/202009/gem2.png)
+- 【fullname:{set(),get()}】
 
-同一个组件不同版本的组件依赖可能有不同，如果有些报错不知道怎么解决，可以按照Gemfile.lock文件中的组件列表一一在[https://rubygems.org/](https://rubygems.org/)上搜索排查，是否组件依赖版本安装错误或者少了依赖项。
+#### 4.2.计算属性和methods对比
 
-gem安装如果很慢的话，可以更新gem源：
+- 计算属性在多次使用时，只会调用一次、它是有缓存的
 
-`gem sources --add https://mirrors.tuna.tsinghua.edu.cn/rubygems/ --remove https://rubygems.org/`
+---
+
+### 五、事件监听
+
+---
+
+#### 5.1.事件监听基本使用
+
+#### 5.2.参数问题
+
+- 【btnClick】、【btnClick(event)】、【btnClick(abc,event)->$event】
+
+#### 5.3.修饰符
+
+- 【.stop】、【.prevent】、【.enter】、【.native】
+
+---
+
+### 六、条件判断
+
+---
+
+#### 6.1.v-if/v-else-if/v-else
+
+#### 6.2.登录小案例
+
+#### 6.3. v-show
+
+- v-show和v-if的区别
+
+---
+
+## 循环遍历\v-model
+
+### 七、循环遍历
+
+---
+
+#### 7.1.遍历数组
+
+#### 7.2.遍历对象
+
+- 【value】、【value,key】、【value,key,index】
+
+#### 7.3.数组那些方式是响应式的
+
+---
+
+### 八、v-model的使用
+
+---
+
+#### 8.1.v-model的基本使用
+
+- v-model=>v-bind:value v-on:input
+
+#### 8.2.v-model和radio/checkbox/select
+
+#### 8.3.修饰符
+
+- 【.lazy】、【.number】、【.trim】
+
+---
+
+## 组件化\模块化开发
+
+### 九、组件化开发
+
+---
+
+#### 9.1.组件化基本使用
+
+- 【认识组件化】、【组件的基本使用过程】
+
+#### 9.1.组件化写法
+
+- 【全局组件和局部组件】、【父组件和子组件】
+
+- 【组件注册语法糖】、【模板的分类写法】（script、template）
+
+#### 9.2.数据的存放与父子组件通信
+
+- 子组件不能直接访问父组件
+
+- 子组件中有自己的data，而且必须是一个函数
+
+- 为什么必须是一个函数
+
+- 【父传子：props】、【子传父：$emit】
+
+#### 9.3.父子组件的访问
+
+- 【children/refs】、【parent/root】
+
+#### 9.4.slot插槽的使用
+
+- 【基本使用】、【具名插槽】、【编译的作用域】、【作用域插槽】
+
+---
+
+### 十、前端模块化开发
+
+---
+
+#### 10.1.为什么要使用模块化
+
+- 简单写JS代码带来的问题、闭包引起代码不可复用、自己实现简单模块化、AMD/CMD/CommonJS
+
+#### 10.2.ES6中模块化的使用
+
+- 【export】、【import】
+
+---
+
+## webpack\Vue CLI
+
+### 十一、webpack
+
+---
+
+#### 11.1.什么是webpack
+
+- 【webpack和gulp对比】、【webpack依赖环境】、【安装webpack】
+
+#### 11.2.webpack起步
+
+- 【webpack命令】、【webpack配置】webpack.config.js/package.json(scripts)
+
+#### 11.3.webpack的loader
+
+- 【css-loader/style-loader】、【less-loader/less】、【url-loader/file-loader】、【babel-loader】
+
+#### 11.4.webpack配置vue
+
+- 【vue-loader】
+
+#### 11.5.webpack的plugin
+#### 11.6.搭建本地服务器
+
+- webpack-dev-server
+
+#### 11.7.配置文件的分离
+
+---
+
+### 十二、Vue CLI
+
+---
+
+#### 12.1.什么是CLI
+
+- 【脚手架是什么东西】、【CLI依赖webpack,node,npm】、【安装CLI3-》拉取CLI2模板】
+
+#### 13.2.CLI2初始化的过程与生产的目录结构的解析
+
+#### 13.3.runtime-compiler和runtime-only的区别
+
+- ESLint到底是什么
+
+- template -> ast -> render -> vdom -> 真实DOM
+
+- render:(h)=>h,->createElement
+
+#### 14.4.Vue-ClI3
+
+- 如何通过CLI3创建项目
+
+- CLI3的目录结构
+
+- 配置文件：1.Vue UI 2.隐藏的配置文件 3.自定义vue.config.js
+
+---
+
+## Vue-Router\Promise
+
+### 十五、Vue-Router
+
+---
+
+#### 15.1.什么是前端路由
+
+- 【后端渲染/后端路由】、【前后端分离】、【SPA/前端路由】
+
+#### 15.2.路由的基本配置
+
+- 安装vue-router
+
+- Vue.use -> 创建VueRouter对象 -> 挂载到Vue实例上
+
+- 配置映射关系：1.创建组件 2.配置映射关系 3.使用router-link/router-view
+
+#### 15.3.细节处理
+
+- 默认路由
+
+- mode: 'history'
+
+- rounter-link -> tag/replace/active-class
+
+#### 15.4.动态路由
+
+- /user/:id
+
+- this.$route.params.id
+
+#### 15.5.参数的传递
+
+- params
+
+- query->URL
+
+- URL:
+
+- URL(协议://主机:端口/路径?查询)
+
+- URL(scheme://host:port/path?query#fragment)
+
+#### 15.6.路由嵌套
+
+- children: []
+
+#### 15.7.导航守卫
+
+- 【全局导航守卫】、【路由独享守卫】、【组件类守卫】
+
+#### 15.8.Keep-alive
+#### 15.9.TabBar的封装过程
+
+---
+
+### 十六、Promise
+
+---
+
+#### 16.1.Promise的基本使用
+
+- 如何将异步操作放入到promise中
+
+- (resolve,reject)=>then/catch
+
+#### 16.2.Promise的链式调用
+#### 16.3.Promise的all方法
+
+---
+
+### 十七、Vuex
+
+---
+#### 17.1.什么是状态管理
+
+#### 17.2.vuex的基本使用
+
+- state->直接修改state(错误)
+
+- mutations->devtools
+
+#### 17.3.核心概念
+
+- State->单一状态树
+
+- Getters
+
+- Mutations
+
+- Actions->异步操作（Promise）
+
+- Modules
+
+#### 17.4.目录组织方式
+
+---
+
+## axios\项目开发
+
+### 十八、网络请求封装（axios）
+
+---
+
+- 18.1.网络请求方式的选择
+
+- 18.2.axios的基本使用
+
+- 18.3.axios的相关配置
+
+- 18.4.axios的创建爱你实例
+
+- 18.5.axios的封装
+
+---
+
+### 十九、项目开发
+
+---
+
+- 19.1.划分目录结构
+
+- 19.2.vue.config.js和.editorconfig
+
+- 19.3.项目的模块划分：tabbar->路由映射关系
 
 ---
