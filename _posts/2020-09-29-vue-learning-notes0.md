@@ -1,20 +1,17 @@
 ---
 layout: post
-title: 【Vue】Vue学习笔记（一）
+title: 【Vue】Vue学习笔记（一）Vue基础安装与Vue-Cli安装
 date:   2020-09-29
 categories: Front-end-Foundation
-tags: [Vue]
+tags: [Vue,Vue-Cli]
 author: Ganace
 comment: false
 ---
 
-前段时间因为工作需要学习了前端Vue框架，目前有正在开发的项目也是用的Vue框架，因为一定程度的开发经验，现在有一点空闲时间，正好总结梳理一下Vue的一些学习笔记。第一篇，内容包括Vue的一些基础学习：Vue实例创建、Vue生命周期。
-
+前段时间因为工作需要学习了前端Vue框架，目前有正在开发的项目也是用的Vue框架，因为一定程度的开发经验，现在有一点空闲时间，正好总结梳理一下Vue的一些学习笔记。第一篇，内容包括Vue的一些基础学习：Vue基础安装、Vue-Cli安装。
 
 
 ## Vue介绍与安装
-
-
 
 ---
 
@@ -28,7 +25,7 @@ Vue 不支持 IE8 及以下版本，因为 Vue 使用了 IE8 无法模拟的 ECM
 
 ####  Vue安装
 
-##### CDN引入
+##### 1.CDN引入
 
 {% highlight ruby %}
 
@@ -40,85 +37,85 @@ Vue 不支持 IE8 及以下版本，因为 Vue 使用了 IE8 无法模拟的 ECM
 
 {% endhighlight %}
 
-##### NPM安装
+##### 2.NPM安装
 
 安装Vue最新稳定版
-{% highlight ruby %}
-
+```ruby
 npm install vue
+```
 
-{% endhighlight %}
+#### Vue实例创建
 
----
-
-## 安装jekyll
-
----
-
-在cmd.exe终端控制台中输入`gem install jekyll`回车安装。
-
-安装对应版本的jekyll依赖，查看版本依赖安装 [https://rubygems.org/gems/jekyll](https://rubygems.org/gems/jekyll)，按照依赖列表逐一安装需要的组件。
-
-  : ![jekyll]({{ site.post_img_url }}/202009/jekyll.png)
-
-查看jekyll版本`jekyll -v`,有版本号表示安装成功
-
-C:\>jekyll -v
-
-jekyll 1.2.0
-
----
-
-## 安装jekyll博客项目依赖
+{%raw%}
+```html
+<div id="app">
+  {{  message  }}
+</div>
+```
+{%endraw%}
+```js
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  }
+})
+```
 
 ---
 
-#### 安装 bundle
-
-按照fork的博客项目的readme中的要求，要运行jekyll还需要安装bundle。
-
-在cmd.exe终端控制台中输入`gem install bundle`回车安装。
-
-安装bundle的依赖bundler，输入`gem install bundler`回车安装。
-
-#### 在windows终端打开项目
-
-打开cmd.exe，cd到博客项目的文件夹。例：`D:\Ganace.github.io>`。
-
-或者用vscode开发工具的，只要把博客项目文件拖到工作区，右键文件夹->在集成终端中打开就行。
-
-#### 安装jekyll博客项目依赖
-
-运行开始之前需要安装博客项目的依赖，可以输入`bundle install`回车，bundle会按照项目Gemfile.lock文件中要求的依赖项以及各依赖项要求的版本来安装。
+## Vue-Cli安装
 
 ---
 
-## 运行jekyll博客项目
+Vue 提供了一个官方的 CLI，为单页面应用 (SPA) 快速搭建繁杂的脚手架。
+使用npm安装webpack工具，利用webpack可以快速构建Vue全家桶（vue+vue-cli+vue-router+vuex+axios）,一步搭建大型应用。
 
----
+#### 安装 Node.js/npm/webpack
 
-#### 运行jekyll博客项目
+Vue-Cli内部是通过`Webpack`来配置打包的。Webpack 是一个前端资源加载/打包工具。它将根据模块的依赖关系进行静态分析,然后将这些模块按照指定的规则生成对应的静态资源。
 
-在windows终端打开项目，例：`D:\Ganace.github.io>`。
+Webpack需要利用`NPM`来安装，NPM是随同`NodeJS`一起安装的包管理工具。Node.js 就是运行在服务端的 JavaScript。
 
-输入`bundle exec jekyll s`回车可以直接运行项目
+所以我们在安装Vue-Cli之前，需要依次安装Node.js和webpack。
 
-如果需要加上草稿箱(_drafts)中的文章,那么就输入`bundle exec jekyll s --drafts`回车运行
+安装教程：[【webpack】安装Node.js和webpack]({{ site.post_img_url }}/posts/webpack-install.html)
 
-#### 运行报错问题
+#### 全局安装Vue-Cli
 
-运行jekyll不成功报如下类似错误`Could not find i18n-0.7.0 in any of the sources`基本上是因为没有安装对应的组件，只要控制台输入`gem install i18n --version 0.7.0`回车安装就行。
+`npm install -g vue-cli`
 
-`gem install 包名或组件名 --version  版本号`
+安装完成后`vue -V`查看版本号，需要注意V是大写。出现版本号说明全局安装成功。
 
-如果不清楚版本，或是版本错误，可以到Ruby社区Gem托管[https://rubygems.org/](https://rubygems.org/)上搜索包名或组件名，选择对应的版本安装，或者查找目前需要的组件所对应的依赖安装。
-  : ![组件安装1]({{ site.post_img_url }}/202009/gem1.png)
-  : ![组件安装2]({{ site.post_img_url }}/202009/gem2.png)
+#### 本地安装Vue-Cli
 
-同一个组件不同版本的组件依赖可能有不同，如果有些报错不知道怎么解决，可以按照Gemfile.lock文件中的组件列表一一在[https://rubygems.org/](https://rubygems.org/)上搜索排查，是否组件依赖版本安装错误或者少了依赖项。
 
-gem安装如果很慢的话，可以更新gem源：
+##### 本地安装Vue-Cli（项目安装）
 
-`gem sources --add https://mirrors.tuna.tsinghua.edu.cn/rubygems/ --remove https://rubygems.org/`
+新建项目文件夹project_file,终端命令行cd进入到项目目录，输入：
+
+`vue create <Project Name>`创建项目，其中`<Project Name>`为文件名，不支持驼峰（含大写字母），这里我输入的是`vue create project_name`。
+
+##### 安装配置选择
+
+- `Please pick a preset: (Use arrow keys)`选择配置模式，键盘上下选择默认(default)还是手动(Manually)，这里我选择的是Manually手动。
+
+- `Check the features needed for your project:`自定义配置，（）里面打`*`的为已选择，键盘上下选择，空格键打`*`,回车默认。这里我选择的是以下几项。`(*) Babel` `(*) Router` `(*) Vuex` `(*) CSS Pre-processors` `(*) Linter / Formatter`。
+
+- ` Use history mode for router?`router是否使用history模式，这里我选择的Yes。
+
+- `Pick a CSS pre-processor`选择一项css预处理器，这里我选择的`Sass/SCSS (with node-sass)`。
+
+- `Pick a linter / formatter config`选择代码格式化检测方案，这里我选择`ESLint + Prettier`。
+
+- `Pick additional lint features:`选择检查方式，这里我选择`Lint on save`保存时检查。
+
+- `Where do you prefer placing config for Babel, ESLint, etc.? `把babel,eslint这些配置文件放哪，这里我选择`In dedicated config files`放在独立文件夹。
+
+- `Save this as a preset for future projects? `是否保存为未来项目的预配置，这里我选择`Yes`。
+
+- `Save preset as? `为预配置起名，这里我起名`vue4`回车。
+
+- 等待安装成功
 
 ---
