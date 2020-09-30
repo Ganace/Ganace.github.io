@@ -81,6 +81,20 @@ comment: false
 
 ## 代码
 
+#### 输出双大括号
+
+{%raw%}
+  {{  message  }}
+{%endraw%}
+```js
+{％raw％}{%raw%}
+  {{  message  }}
+{%endraw%}{％endraw％}
+```
+％替换成%
+
+#### 代码
+
 ```javascript
 ~~~javascript
 console.log('Ganace');
