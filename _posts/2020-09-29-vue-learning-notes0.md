@@ -10,12 +10,19 @@ comment: false
 
 前段时间因为工作需要学习了前端Vue框架，目前有正在开发的项目也是用的Vue框架，因为一定程度的开发经验，现在有一点空闲时间，正好总结梳理一下Vue的一些学习笔记。第零篇，内容包括Vue的一些基础学习大纲，用于以后复习查漏补缺。
 
+---
 
 ## 认识Vuejs
 
-### 一、认识Vuejs
+##### 相关笔记：
 
----
+- [【Vue】Vue学习笔记（一）Vue基础安装与Vue-Cli安装]({{ '/posts/vue-learning-notes1.html' | prepend: site.baseurl }})
+
+- [【Vue】Vue学习笔记（二）Vue基本使用v-for,v-on]({{ '/posts/vue-learning-notes2.html' | prepend: site.baseurl }})
+
+- [【Vue】Vue学习笔记（三）Vue的MVVM与生命周期函数]({{ '/posts/vue-learning-notes2.html' | prepend: site.baseurl }})
+
+### 一、认识Vuejs
 
 ###### 1.1 认识Vuejs
 
@@ -41,27 +48,24 @@ comment: false
 
 - 【el:】、【data:】、【methods:】、【生命周期函数】
 
-##### 相关笔记：
-
-- [Vue基础安装与Vue-Cli安装]({{ '/posts/vue-learning-notes1.html' | prepend: site.baseurl }})
-
 ---
 
 ## 插值语法\v-bind
 
-### 二、插值语法
+##### 相关笔记：
 
----
+- [【Vue】Vue学习笔记（四）Vue的组件与差值语法]({{ '/posts/vue-learning-notes4.html' | prepend: site.baseurl }})
+
+- [【Vue】Vue学习笔记（五）Vue的指令与语法糖]({{ '/posts/vue-learning-notes5.html' | prepend: site.baseurl }})
+
+
+### 二、插值语法
 
 - 【mustache语法】
 
 - 【v-once】、【v-html】、【v-text】、【v-pre】、【v-cloak:斗篷】
 
----
-
 ### 三、v-bind
-
----
 
 ###### v-bind绑定基本属性
 
@@ -75,12 +79,9 @@ comment: false
 
 ---
 
-
 ## 计算属性\事件监听\条件判断
 
 ### 四、计算属性
-
----
 
 - 【案例一：firstName+lastName】、【案例二：books->price】
 
@@ -94,11 +95,7 @@ comment: false
 
 - 计算属性在多次使用时，只会调用一次、它是有缓存的
 
----
-
 ### 五、事件监听
-
----
 
 ###### 5.1.事件监听基本使用
 
@@ -110,11 +107,7 @@ comment: false
 
 - 【.stop】、【.prevent】、【.enter】、【.native】
 
----
-
 ### 六、条件判断
-
----
 
 ###### 6.1.v-if/v-else-if/v-else
 
@@ -130,8 +123,6 @@ comment: false
 
 ### 七、循环遍历
 
----
-
 ###### 7.1.遍历数组
 
 ###### 7.2.遍历对象
@@ -140,11 +131,7 @@ comment: false
 
 ###### 7.3.数组那些方式是响应式的
 
----
-
 ### 八、v-model的使用
-
----
 
 ###### 8.1.v-model的基本使用
 
@@ -161,8 +148,6 @@ comment: false
 ## 组件化\模块化开发
 
 ### 九、组件化开发
-
----
 
 ###### 9.1.组件化基本使用
 
@@ -192,11 +177,7 @@ comment: false
 
 - 【基本使用】、【具名插槽】、【编译的作用域】、【作用域插槽】
 
----
-
 ### 十、前端模块化开发
-
----
 
 ###### 10.1.为什么要使用模块化
 
@@ -211,8 +192,6 @@ comment: false
 ## webpack\Vue CLI
 
 ### 十一、webpack
-
----
 
 ###### 11.1.什么是webpack
 
@@ -237,11 +216,7 @@ comment: false
 
 ###### 11.7.配置文件的分离
 
----
-
 ### 十二、Vue CLI
-
----
 
 ###### 12.1.什么是CLI
 
@@ -265,13 +240,9 @@ comment: false
 
 - 配置文件：1.Vue UI 2.隐藏的配置文件 3.自定义vue.config.js
 
----
-
 ## Vue-Router\Promise
 
 ### 十五、Vue-Router
-
----
 
 ###### 15.1.什么是前端路由
 
@@ -322,11 +293,7 @@ comment: false
 ###### 15.8.Keep-alive
 ###### 15.9.TabBar的封装过程
 
----
-
 ### 十六、Promise
-
----
 
 ###### 16.1.Promise的基本使用
 
@@ -337,11 +304,8 @@ comment: false
 ###### 16.2.Promise的链式调用
 ###### 16.3.Promise的all方法
 
----
-
 ### 十七、Vuex
 
----
 ###### 17.1.什么是状态管理
 
 ###### 17.2.vuex的基本使用
@@ -370,8 +334,6 @@ comment: false
 
 ### 十八、网络请求封装（axios）
 
----
-
 - 18.1.网络请求方式的选择
 
 - 18.2.axios的基本使用
@@ -382,11 +344,7 @@ comment: false
 
 - 18.5.axios的封装
 
----
-
 ### 十九、项目开发
-
----
 
 - 19.1.划分目录结构
 
