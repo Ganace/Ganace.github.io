@@ -10,11 +10,11 @@ head-title: Ganace's blog
 title: Ganace
 
 baseurl: ""    # the subpath of your site, "/blog"
-# url: "https://ganace.github.io"
-url: "http://127.0.0.1:4000"
+url: "https://ganace.github.io"
+# url: "http://127.0.0.1:4000"
 
-# post_img_url: "https://ganace.gitee.io/assets/postfile"
-post_img_url: "http://127.0.0.1:4000/assets/postfile"
+post_img_url: "https://ganace.gitee.io/assets/postfile"
+# post_img_url: "http://127.0.0.1:4000/assets/postfile"
 
 msg_board_url: "https://support.qq.com/products/277943?"
 
