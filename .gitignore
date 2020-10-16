@@ -5,3 +5,5 @@ google-analytics.js
 .env
 Dockerfile
 .jekyll-cache
+
+_config.yml
