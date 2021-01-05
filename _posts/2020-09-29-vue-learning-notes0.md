@@ -81,6 +81,13 @@ comment: false
 
 ## 计算属性\事件监听\条件判断
 
+##### 相关笔记：
+
+- [【Vue】Vue学习笔记（六）Vue的计算属性和事件监听]({{ '/posts/vue-learning-notes6.html' | prepend: site.baseurl }})
+
+- [【Vue】Vue学习笔记（七）Vue的指令与语法糖]({{ '/posts/vue-learning-notes7.html' | prepend: site.baseurl }})
+
+
 ### 四、计算属性
 
 - 【案例一：firstName+lastName】、【案例二：books->price】

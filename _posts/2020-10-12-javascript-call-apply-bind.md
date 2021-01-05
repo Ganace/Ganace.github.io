@@ -71,7 +71,7 @@ var bvz = {
   name: '疯狂戴夫',
   sandbag: '僵尸'
 }
-obj.exercise('吃饭', '睡觉'); // 森碟吃饭、睡觉、打undefined
+obj.exercise('吃饭', '睡觉'); // 森碟吃饭、睡觉、打豆豆
 obj.exercise.call(bvz,'躺沙发', '吃零食'); // 疯狂戴夫躺沙发、吃零食、打僵尸
 obj.exercise.apply(bvz,['躺沙发', '吃零食']); // 疯狂戴夫躺沙发、吃零食、打僵尸
 obj.exercise.bind(bvz,'躺沙发', '吃零食')(); // 疯狂戴夫躺沙发、吃零食、打僵尸
