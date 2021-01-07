@@ -26,11 +26,13 @@ layout: default
   <ul class="post-list">
     <!-- This loops through the paginated posts -->
     {% for post in paginator.posts %}
-      <li class="card-panel hoverable">
-        <span class="grey-text right">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <li class="post-card card-panel hoverable">
+        <span class="date-pc grey-text right">{{ post.date | date: "%b %-d, %Y" }}</span>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 
-        <button data-target="{{ post.id | remove: '%' | replace: '/', '_' }}" class="waves-effect waves-light btn modal-trigger" style="padding: 0 1.2rem;">概览<i class="mdi mdi-send right"></i></button>
+        <button data-target="{{ post.id | remove: '%' | replace: '/', '_' }}" class="post-exp waves-effect waves-light btn modal-trigger">概览<i class="mdi mdi-send right"></i></button>
+
+        <span class="date-app grey-text right">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <div id="{{ post.id | remove: '%' | replace: '/', '_' }}" class="modal modal-fixed-footer">
           <div class="modal-content">

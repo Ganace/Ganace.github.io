@@ -1,39 +1,56 @@
 <div class="nav-wrapper">
-      <span class="site-title"><a href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a></span>
-      <a href="#" data-activates="mobile-navbar" class="button-collapse"><i class="mdi mdi-menu white-text"></i></a>
-      
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="{{ '/' | prepend: site.baseurl }}" class="white-text">
-            <i class="mdi mdi-home-variant left indigo-text text-lighten-3"></i>首页
-        </a></li>
-        <li><a href="{{ '/category' | prepend: site.baseurl }}" class="white-text">
-            <i class="mdi mdi-file-document-box left indigo-text text-lighten-3"></i>类目
-        </a></li>
-        <li><a href="{{ '/dossier' | prepend: site.baseurl }}" class="white-text">
-            <i class="mdi mdi-calendar-text left indigo-text text-lighten-3"></i>归档
-        </a></li>
-        <li><a href="{{ site.msg_board_url }}" target="_blank" class="white-text">
-            <i class="mdi mdi-message-draw left indigo-text text-lighten-3"></i>留言
-        </a></li>
-        <li><a href="{{ '/about' | prepend: site.baseurl }}" class="white-text">
-            <i class="mdi mdi-account-box left indigo-text text-lighten-3"></i>关于
-        </a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-navbar">
-        <li><a href="{{ '/' | prepend: site.baseurl }}" class="waves-effect waves-teal cyan-text">
-            <i class="mdi mdi-home-variant left indigo-text text-lighten-3"></i>首页
-        </a></li>
-        <li><a href="{{ '/category' | prepend: site.baseurl }}" class="waves-effect waves-teal cyan-text">
-            <i class="mdi mdi-file-document-box left indigo-text text-lighten-3"></i>类目
-        </a></li>
-        <li><a href="{{ '/dossier' | prepend: site.baseurl }}" class="waves-effect waves-teal cyan-text">
-            <i class="mdi mdi-calendar-text left indigo-text text-lighten-3"></i>归档
-        </a></li>
-        <li><a href="{{ site.msg_board_url }}" target="_blank" class="waves-effect waves-teal cyan-text">
-            <i class="mdi mdi-message-draw left indigo-text text-lighten-3"></i>留言
-        <li><a href="{{ '/about' | prepend: site.baseurl }}" class="waves-effect waves-teal cyan-text">
-            <i class="mdi mdi-account-box left indigo-text text-lighten-3"></i>关于
-        </a></li>
-        </a></li>
-      </ul>
+    <span class="site-title">
+        <a href="{{ '/' | prepend: site.baseurl }}">
+            <img style="height: 40px" src="{{ '/assets/public/logo/logo.png' | prepend: site.baseurl }}" alt="" />
+            <!-- {{ site.title }} -->
+        </a>
+    </span>
+    <a href="#" style="margin-right: 0px" data-activates="mobile-navbar" class="button-collapse"><i class="mdi mdi-menu white-text"></i></a>
+
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>
+            <a href="{{ '/' | prepend: site.baseurl }}" class="white-text"> <i class="mdi mdi-home-variant left indigo-text text-lighten-3"></i>首页 </a>
+        </li>
+        <li>
+            <a href="{{ '/category' | prepend: site.baseurl }}" class="white-text"> <i class="mdi mdi-file-document-box left indigo-text text-lighten-3"></i>类目 </a>
+        </li>
+        <li>
+            <a href="{{ '/dossier' | prepend: site.baseurl }}" class="white-text"> <i class="mdi mdi-calendar-text left indigo-text text-lighten-3"></i>归档 </a>
+        </li>
+        <li>
+            <a href="{{ site.msg_board_url }}" target="_blank" class="white-text"> <i class="mdi mdi-message-draw left indigo-text text-lighten-3"></i>留言 </a>
+        </li>
+        <li>
+            <a href="{{ '/about' | prepend: site.baseurl }}" class="white-text"> <i class="mdi mdi-account-box left indigo-text text-lighten-3"></i>关于 </a>
+        </li>
+    </ul>
+    <ul class="side-nav" id="mobile-navbar">
+        <li class="indigo">
+            <a href="{{ '/' | prepend: site.baseurl }}">
+                <img style="height: 40px" src="{{ '/assets/public/logo/logo.png' | prepend: site.baseurl }}" alt="" />
+                <!-- {{ site.title }} -->
+            </a>
+        </li>
+        <li>
+            <a href="{{ '/' | prepend: site.baseurl }}" class="waves-effect waves-teal cyan-text"> <i class="mdi mdi-home-variant left indigo-text text-lighten-3"></i>首页 </a>
+        </li>
+        <li>
+            <a href="{{ '/category' | prepend: site.baseurl }}" class="waves-effect waves-teal cyan-text">
+                <i class="mdi mdi-file-document-box left indigo-text text-lighten-3"></i>类目
+            </a>
+        </li>
+        <li>
+            <a href="{{ '/dossier' | prepend: site.baseurl }}" class="waves-effect waves-teal cyan-text">
+                <i class="mdi mdi-calendar-text left indigo-text text-lighten-3"></i>归档
+            </a>
+        </li>
+        <li>
+            <a href="{{ site.msg_board_url }}" target="_blank" class="waves-effect waves-teal cyan-text">
+                <i class="mdi mdi-message-draw left indigo-text text-lighten-3"></i>留言
+            </a>
+        </li>
+        <li>
+            <a href="{{ '/about' | prepend: site.baseurl }}" class="waves-effect waves-teal cyan-text"> <i class="mdi mdi-account-box left indigo-text text-lighten-3"></i>关于 </a>
+        </li>
+    </ul>
 </div>
