@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 【TypeScript】TypeScript类型体操(十三) 中等挑战
-date:   2024-03-29
+title: 【TypeScript】TypeScript类型体操(十五) 中等挑战
+date:   2024-04-02
 categories: Front-end-Foundation
 tags: [TypeScript]
 author: Ganace
