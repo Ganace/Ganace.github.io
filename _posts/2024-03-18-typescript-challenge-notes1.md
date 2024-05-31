@@ -10,11 +10,13 @@ comment: false
 
 又到了记笔记的时候了，这次是 TypeScript 的类型体操笔记，好玩又涨知识，为以后温故知新做准备。
 
- [实现 Pick `Pick<T, K>`](#part-1) | 对象属性只读 `Readonly` | 元组转换为对象 `Tuple to Object` | 第一个元素 `First of Array` | 获取元组长度 `Length of Tuple` | 实现 Exclude `Exclude<T, U>`
+[实现 Pick Pick<T, K>](#part-1) 、[对象属性只读 `Readonly`](#part-2)、[元组转换为对象 `Tuple to Object`](#part-3)
+[第一个元素 `First of Array`](#part-4)、[获取元组长度 `Length of Tuple`](#part-5)、[实现 Exclude `Exclude<T, U>`](#part-6)
 
 ---
 
 ## 简单挑战
+
 {: #part-1}
 
 ### 一、实现 Pick `Pick<T, K>`
@@ -38,6 +40,8 @@ type MyPick<T, K extends keyof T> = {
 
 ### 二、对象属性只读 `Readonly`
 
+{: #part-2}
+
 ##### 不要使用内置的`Readonly<T>`，自己实现一个。
 
 泛型 `Readonly<T>` 会接收一个 泛型参数，并返回一个完全一样的类型，只是所有属性都会是只读 (`readonly`) 的。
@@ -58,6 +62,8 @@ type MyReadonly<T> = {
 
 ### 三、元组转换为对象 `Tuple to Object`
 
+{: #part-3}
+
 ##### 将一个元组类型转换为对象类型，这个对象类型的键/值和元组中的元素对应。
 
 ```ts
@@ -71,6 +77,8 @@ type TupleToObject<T extends readonly (keyof any)[]> = {
 元组的索引都是`number`类型的，所以可以一次全部取到所有元素的类型。
 
 ### 四、第一个元素 `First of Array`
+
+{: #part-4}
 
 ##### 实现一个`First<T>`泛型，它接受一个数组`T`并返回它的第一个元素的类型。
 
@@ -96,6 +104,8 @@ type First<T extends any[]> = T extends [infer A, ...infer rest] ? A : never;
 
 ### 五、获取元组长度 `Length of Tuple`
 
+{: #part-5}
+
 ##### 创建一个`Length`泛型，这个泛型接受一个只读的元组，返回这个元组的长度。
 
 ```ts
@@ -107,6 +117,8 @@ type Length<T extends readonly any[]> = T extends { length: infer L } ? L : neve
 ```
 
 ### 六、实现 Exclude `Exclude<T, U>`
+
+{: #part-6}
 
 ##### 实现内置的 `Exclude<T, U>` 类型，但不能直接使用它本身。
 
