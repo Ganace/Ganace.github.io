@@ -11,6 +11,7 @@ comment: false
 TypeScript 的类型体操笔记，温故知新。
 
 [RequiredByKeys](#part-1)、[全部属性非只读 Mutable](#part-2)、[属性排除 OmitByType](#part-3)
+
 [ObjectEntries](#part-4)、[Shift](#part-5)、[Tuple to Nested Object](#part-6)
 
 ---

@@ -11,6 +11,7 @@ comment: false
 TypeScript 的类型体操笔记，温故知新。
 
 [Fill](#part-1)、[Trim Right](#part-2)、[去除数组指定元素](#part-3)
+
 [Trunc](#part-4)、[IndexOf](#part-5)、[Join](#part-6)
 
 ---

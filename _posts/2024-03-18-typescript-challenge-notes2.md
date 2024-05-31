@@ -11,6 +11,7 @@ comment: false
 TypeScript 的类型体操笔记，温故知新。
 
 [Awaited](#part-1)、[If](#part-2)、[Concat](#part-3)、[Includes](#part-4)
+
 [Push](#part-5)、[Unshift](#part-6)、[Parameters](#part-7)
 
 ---

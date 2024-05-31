@@ -11,6 +11,7 @@ comment: false
 TypeScript 的类型体操笔记，温故知新。
 
 [AnyOf](#part-1)、[IsNever](#part-2)、[IsUnion](#part-3)
+
 [ReplaceKeys](#part-4)、[Remove Index Signature](#part-5)、[Percentage Parser](#part-6)
 
 ---

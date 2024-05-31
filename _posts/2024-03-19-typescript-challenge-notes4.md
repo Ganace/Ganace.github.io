@@ -9,7 +9,9 @@ comment: false
 ---
 
 TypeScript 的类型体操笔记，温故知新。
+
 [最后一个元素 `Last<T>`](#part-1)、[排除最后一项 `Pop<T>`](#part-2)、[`Promise.all`](#part-3)
+
 [查找类型](#part-4)、[去除左侧空白](#part-5)、[字符串首字母大写 `Capitalize`](#part-6)
 
 ---

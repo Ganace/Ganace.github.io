@@ -11,6 +11,7 @@ comment: false
 TypeScript 的类型体操笔记，温故知新。
 
 [剔除指定字符 Drop Char](#part-1)、[数字减一 MinusOne](#part-2)、[PickByType](#part-3)
+
 [StartsWith](#part-4)、[EndsWith](#part-5)、[PartialByKeys](#part-6)
 
 ---

@@ -11,6 +11,7 @@ comment: false
 TypeScript 的类型体操笔记，温故知新。
 
  [反转 Reverse](#part-1)、[函数参数类型反转 Flip Arguments](#part-2)、[数组深度展开 FlattenDepth](#part-3)
+ 
  [BEM style string](#part-4)、[InorderTraversal](#part-5)、[Flip](#part-6)
 
 ---

@@ -11,6 +11,7 @@ comment: false
 TypeScript 的类型体操笔记，温故知新。
 
 [字符串字符替换 Replace](#part-1)、[字符串字符替换(所有) ReplaceAll](#part-2)、[追加参数](#part-3)
+
 [联合类型的全排列 Permutation](#part-4)、[计算字符串的长度 Length of String](#part-5)、[数组扁平化 Flatten](#part-6)
 
 ---

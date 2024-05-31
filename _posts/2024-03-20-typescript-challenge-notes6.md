@@ -11,6 +11,7 @@ comment: false
 TypeScript 的类型体操笔记，温故知新。
 
 [为接口新增字段 Append to object](#part-1)、[返回正数字符串 Absolute](#part-2)、[字符串转字母 String to Union](#part-3)
+
 [类型合并 Merge](#part-4)、[字母大小写转换和连接字符串 KebabCase](#part-5)、[两个接口类型的差值属性 Diff](#part-6)
 
 ---
