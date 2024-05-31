@@ -12,7 +12,7 @@ TypeScript 的类型体操笔记，温故知新。
 
 [斐波那契序列](#part-1)、[AllCombinations](#part-2)、[GreaterThan](#part-3)
 
-[Zip](#part-4)、[`IsTuple`](#part-5)、[Chunk](#part-6)
+[Zip](#part-4)、[IsTuple](#part-5)、[Chunk](#part-6)
 
 ---
 

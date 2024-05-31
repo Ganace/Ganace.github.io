@@ -10,9 +10,9 @@ comment: false
 
 TypeScript 的类型体操笔记，温故知新。
 
-[获取函数返回类型 ReturnType<T>](#part-1)、[实现 Omit<T, K>](#part-2)、[对象部分属性只读 Readonly<T>](#part-3)
+[ 获取函数返回类型 ReturnType ](#part-1)、[ 实现 Omit ](#part-2)、[对象部分属性只读 Readonly ](#part-3)
 
-[对象属性只读（递归） DeepReadonly<T>](#part-4)、[元组转合集 TupleToUnion<T>](#part-5)、[可串联构造器](#part-6)
+[ 对象属性只读（递归） DeepReadonly ](#part-4)、[ 元组转合集 TupleToUnion ](#part-5)、[ 可串联构造器 ](#part-6)
 
 ---
 
