@@ -10,7 +10,8 @@ comment: false
 
 TypeScript 的类型体操笔记，温故知新。
 
-###### `RequiredByKeys` | 全部属性非只读 `Mutable` | 属性排除 `OmitByType` | `ObjectEntries` | `Shift` | `Tuple to Nested Object`
+[RequiredByKeys](#part-1)、[全部属性非只读 Mutable](#part-2)、[属性排除 OmitByType](#part-3)
+[ObjectEntries](#part-4)、[Shift](#part-5)、[Tuple to Nested Object](#part-6)
 
 ---
 
@@ -18,15 +19,17 @@ TypeScript 的类型体操笔记，温故知新。
 
 ### 一、`RequiredByKeys`
 
+{: #part-1}
+
 ##### 实现一个通用的`RequiredByKeys<T, K>`，它接收两个类型参数`T`和`K`。
 
 `K`指定应设为必选的`T`的属性集。当没有提供`K`时，它就和普通的`Required<T>`一样使所有的属性成为必选的。
 
-```ts 
+```ts
 type RequiredByPs<T, K extends keyof T = keyof T, O = Omit<T, K> & { [P in K]-?: T[P] }> = { [P in keyof O]: O[P] };
 ```
 
-```ts 
+```ts
 type Merge<T> = {
     [K in keyof T]: T[K];
 };
@@ -41,15 +44,17 @@ type RequiredByKeys<T, K extends PropertyKey = keyof T> = Merge<T & Required<Pic
 
 ### 二、全部属性非只读 `Mutable`
 
+{: #part-2}
+
 ##### 实现一个通用的类型 `Mutable<T>`，使类型 `T` 的全部属性可变（非只读）。
 
-```ts 
+```ts
 type Mutable<T extends object> = {
     -readonly [K in keyof T]: T[K];
 };
 ```
 
-```ts 
+```ts
 type Mutable<T extends object> = {
     -readonly [K in keyof T]: T[K] extends Record<string, unknown> ? Mutable<T[K]> : T[K];
 };
@@ -57,9 +62,11 @@ type Mutable<T extends object> = {
 
 ### 三、属性排除 `OmitByType`
 
+{: #part-3}
+
 ##### From `T`, pick a set of properties whose type are not assignable to `U`.
 
-```ts 
+```ts
 // For Example
 type OmitBoolean = OmitByType<
     {
@@ -72,7 +79,7 @@ type OmitBoolean = OmitByType<
 >; // { name: string; count: number }
 ```
 
-```ts 
+```ts
 type OmitByType<T, U> = {
     [K in keyof T as T[K] extends U ? never : K]: T[K];
 };
@@ -80,9 +87,11 @@ type OmitByType<T, U> = {
 
 ### 四、`ObjectEntries`
 
+{: #part-4}
+
 ##### Implement the type version of `Object.entries`
 
-```ts 
+```ts
 // For example
 interface Model {
     name: string;
@@ -92,7 +101,7 @@ interface Model {
 type modelEntries = ObjectEntries<Model>; // ['name', string] | ['age', number] | ['locations', string[] | null];
 ```
 
-```ts 
+```ts
 type ObjectEntries<T, U = Required<T>> = {
     [K in keyof U]: [K, U[K] extends never ? undefined : U[K]];
 }[keyof U];
@@ -104,36 +113,40 @@ type ObjectEntries<T, U = Required<T>> = {
 
 ### 五、`Shift`
 
+{: #part-5}
+
 ##### Implement the type version of `Array.shift`
 
 For example:
 ` type Result = Shift<[3, 2, 1]> // [2, 1]`
 
-```ts 
+```ts
 type Shift<T extends unknown[]> = T extends [infer _, ...infer U] ? [...U] : T;
 ```
 
 ### 六、`Tuple to Nested Object`
 
+{: #part-6}
+
 ##### Given a tuple type `T` that only contains string type, and a type `U`, build an object recursively.
 
 For example:
 
-```ts 
+```ts
 type a = TupleToNestedObject<["a"], string>; // {a: string}
 type b = TupleToNestedObject<["a", "b"], number>; // {a: {b: number}}
 type c = TupleToNestedObject<[], boolean>; // boolean. if the tuple is empty, just return the U type
 ```
 
-```ts 
+```ts
 type TupleToNestedObject<T, U> = T extends [infer F, ...infer R] ? { [K in F & string]: TupleToNestedObject<R, U> } : U;
 ```
 
-```ts 
+```ts
 type TupleToNestedObject<T, U> = T extends [infer F extends PropertyKey, ...infer R] ? { [K in F]: TupleToNestedObject<R, U> } : U;
 ```
 
-```ts 
+```ts
 type TupleToNestedObject<T, U> = T extends [infer F extends PropertyKey, ...infer R] ? Record<F, TupleToNestedObject<R, U>> : U;
 ```
 

@@ -10,7 +10,8 @@ comment: false
 
 TypeScript 的类型体操笔记，温故知新。
 
-###### 剔除指定字符 `Drop Char` | 数字减一 `MinusOne` | `PickByType` | `StartsWith` | `EndsWith` | `PartialByKeys`
+[剔除指定字符 Drop Char](#part-1)、[数字减一 MinusOne](#part-2)、[PickByType](#part-3)
+[StartsWith](#part-4)、[EndsWith](#part-5)、[PartialByKeys](#part-6)
 
 ---
 
@@ -18,17 +19,21 @@ TypeScript 的类型体操笔记，温故知新。
 
 ### 一、剔除指定字符 `Drop Char`
 
+{: #part-1}
+
 ##### 从字符串中剔除指定字符。
 
-```ts 
+```ts
 type DropChar<S extends string, C extends string> = S extends `${infer L}${C}${infer R}` ? DropChar<`${L}${R}`, C> : S;
 ```
 
 ### 二、数字减一 `MinusOne`
 
+{: #part-2}
+
 ##### 给定一个正整数作为类型的参数，要求返回的类型是该数字减 1。
 
-```ts 
+```ts
 // Reverses a string: '123' -> '321'
 type Reverse<S extends string, A extends string = ""> = S extends `${infer F}${infer R}` ? Reverse<R, `${F}${A}`> : A;
 
@@ -54,9 +59,11 @@ type MinusOne<T extends number> = Reverse<RevMinusOne<Reverse<`${T}`>>> extends 
 
 ### 三、`PickByType`
 
+{: #part-3}
+
 ##### From `T`, pick a set of properties whose type are assignable to `U`.
 
-```ts 
+```ts
 // For Example
 type OnlyBoolean = PickByType<
     {
@@ -69,7 +76,7 @@ type OnlyBoolean = PickByType<
 >; // { isReadonly: boolean; isEnable: boolean; }
 ```
 
-```ts 
+```ts
 type PickByType<T, U> = {
     [K in keyof T as T[K] extends U ? K : never]: U;
 };
@@ -77,31 +84,37 @@ type PickByType<T, U> = {
 
 ### 四、`StartsWith`
 
+{: #part-4}
+
 ##### 实现`StartsWith<T, U>`,接收两个`string`类型参数,然后判断`T`是否以`U`开头,根据结果返回`true`或`false`
 
-```ts 
+```ts
 type StartsWith<T extends string, U extends string> = T extends `${U}${infer R}` ? true : false;
 ```
 
-```ts 
+```ts
 type StartsWith<T extends string, U extends string> = T extends `${U}${string}` ? true : false;
 ```
 
 ### 五、`EndsWith`
 
+{: #part-5}
+
 ##### 实现`EndsWith<T, U>`,接收两个`string`类型参数,然后判断`T`是否以`U`结尾,根据结果返回`true`或`false`
 
-```ts 
+```ts
 type EndsWith<T extends string, U extends string> = T extends `${string}${U}` ? true : false;
 ```
 
 ### 六、`PartialByKeys`
 
+{: #part-6}
+
 ##### 实现一个通用的`PartialByKeys<T, K>`，它接收两个类型参数 T 和 K。
 
 `K`指定应设置为可选的 T 的属性集。当没有提供`K`时，它就和普通的`Partial<T>`一样使所有属性都是可选的。
 
-```ts 
+```ts
 type Merge<T> = {
     [K in keyof T]: T[K];
 };

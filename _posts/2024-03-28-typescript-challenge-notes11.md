@@ -10,13 +10,16 @@ comment: false
 
 TypeScript 的类型体操笔记，温故知新。
 
-###### 斐波那契序列 | `AllCombinations` | `GreaterThan` | `Zip` | `IsTuple` | `Chunk`
+[斐波那契序列](#part-1)、[`AllCombinations`](#part-2)、[`GreaterThan`](#part-3)
+[`Zip`](#part-4)、[`IsTuple`](#part-5)、[`Chunk`](#part-6)
 
 ---
 
 ## 中等挑战
 
 ### 一、斐波那契序列
+
+{: #part-1}
 
 ##### Implement a generic `Fibonacci<T>` takes an number `T` and returns it's corresponding Fibonacci number.
 
@@ -39,6 +42,8 @@ type Fibonacci<T extends number, CurrentIndex extends any[] = [1], Prev extends 
 
 ### 二、`AllCombinations`
 
+{: #part-2}
+
 ##### Implement type `AllCombinations<S>` that return all combinations of strings which use characters from S at most once.
 
 For example:
@@ -56,6 +61,8 @@ type AllCombinations<S extends string, U extends string = StrToUnion<S>> = [U] e
 ```
 
 ### 三、`GreaterThan`
+
+{: #part-3}
 
 ##### In This Challenge, You should implement a type `GreaterThan<T, U>` like `T` > `U`
 
@@ -90,6 +97,8 @@ type GreaterThan<T extends number, U extends number> = T extends U ? false : U e
 
 ### 四、`Zip`
 
+{: #part-4}
+
 ##### In This Challenge, You should implement a type `Zip<T, U>`, T and U must be `Tuple`
 
 `type exp = Zip<[1, 2], [true, false]> // expected to be [[1, true], [2, false]]`
@@ -99,6 +108,8 @@ type Zip<T, U, Rt extends unknown[] = []> = T extends [infer F1, ...infer R1] ? 
 ```
 
 ### 五、`IsTuple`
+
+{: #part-5}
 
 ##### Implement a type `IsTuple`, which takes an input type `T` and returns whether `T` is tuple type.
 
@@ -117,6 +128,8 @@ type IsTuple<T> = [T] extends [never] ? false : T extends readonly any[] ? (numb
 ```
 
 ### 六、`Chunk`
+
+{: #part-6}
 
 ##### Do you know `lodash`? `Chunk` is a very useful function in it, now let's implement it. `Chunk<T, N>` accepts two required type parameters, the `T` must be a `tuple`, and the `N` must be an `integer >=1`
 

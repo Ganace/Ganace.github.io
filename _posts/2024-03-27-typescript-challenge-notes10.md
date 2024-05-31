@@ -10,13 +10,16 @@ comment: false
 
 TypeScript 的类型体操笔记，温故知新。
 
-###### 反转 `Reverse` | 函数参数类型反转 `Flip Arguments` | 数组深度展开 `FlattenDepth` | `BEM style string` | `InorderTraversal` | `Flip`
+ [反转 Reverse](#part-1)、[函数参数类型反转 Flip Arguments](#part-2)、[数组深度展开 FlattenDepth](#part-3)
+ [BEM style string](#part-4)、[InorderTraversal](#part-5)、[Flip](#part-6)
 
 ---
 
 ## 中等挑战
 
 ### 一、反转 `Reverse`
+
+{: #part-1}
 
 ##### 实现类型版本的数组反转 `Array.reverse`
 
@@ -29,6 +32,8 @@ type Reverse<T extends unknown[]> = T extends [infer F, ...infer R] ? [...Revers
 ```
 
 ### 二、函数参数类型反转 `Flip Arguments`
+
+{: #part-2}
 
 ##### Implement the type version of lodash's \_.flip.
 
@@ -47,6 +52,8 @@ type FlipArguments<T extends (...args: any[]) => any> = T extends (...args: infe
 ```
 
 ### 三、数组深度展开 `FlattenDepth`
+
+{: #part-3}
 
 ##### Recursively flatten array up to depth times.
 
@@ -68,6 +75,8 @@ type FlattenDepth<T extends any[], C extends number = 1, U extends any[] = []> =
 ```
 
 ### 四、`BEM style string`
+
+{: #part-4}
 
 ##### The Block, Element, Modifier methodology (BEM) is a popular naming convention for classes in CSS.
 
@@ -92,6 +101,8 @@ type BEM<B extends string, E extends string[], M extends string[]> = `${B}${E ex
 ```
 
 ### 五、`InorderTraversal`
+
+{: #part-5}
 
 ##### Implement the type version of binary tree inorder traversal.
 
@@ -122,6 +133,8 @@ type InorderTraversal<T extends TreeNode | null> = T extends TreeNode ? [...Inor
 ```
 
 ### 六、`Flip`
+
+{: #part-6}
 
 ##### Implement the type of `just-flip-object`. Examples:
 

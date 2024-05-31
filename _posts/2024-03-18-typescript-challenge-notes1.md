@@ -10,8 +10,8 @@ comment: false
 
 又到了记笔记的时候了，这次是 TypeScript 的类型体操笔记，好玩又涨知识，为以后温故知新做准备。
 
-[实现 Pick Pick<T, K>](#part-1) 、[对象属性只读 `Readonly`](#part-2)、[元组转换为对象 `Tuple to Object`](#part-3)
-[第一个元素 `First of Array`](#part-4)、[获取元组长度 `Length of Tuple`](#part-5)、[实现 Exclude `Exclude<T, U>`](#part-6)
+[实现 Pick Pick<T, K>](#part-1) 、[对象属性只读 Readonly](#part-2)、[元组转换为对象 Tuple to Object](#part-3)
+[第一个元素 First of Array](#part-4)、[获取元组长度 Length of Tuple](#part-5)、[实现Exclude Exclude<T, U>](#part-6)
 
 ---
 
