@@ -10,11 +10,12 @@ comment: false
 
 又到了记笔记的时候了，这次是 TypeScript 的类型体操笔记，好玩又涨知识，为以后温故知新做准备。
 
-###### 实现 Pick `Pick<T, K>` | 对象属性只读 `Readonly` | 元组转换为对象 `Tuple to Object` | 第一个元素 `First of Array` | 获取元组长度 `Length of Tuple` | 实现 Exclude `Exclude<T, U>`
+ [实现 Pick `Pick<T, K>`](#part-1) | 对象属性只读 `Readonly` | 元组转换为对象 `Tuple to Object` | 第一个元素 `First of Array` | 获取元组长度 `Length of Tuple` | 实现 Exclude `Exclude<T, U>`
 
 ---
 
 ## 简单挑战
+{: #part-1}
 
 ### 一、实现 Pick `Pick<T, K>`
 
@@ -34,7 +35,6 @@ type MyPick<T, K extends keyof T> = {
 ##### `TypeScript`提供的工具类型：
 
 `Pick<Type, Keys>` 通过从 Type 中选取一组属性 Keys（字符串字面或字符串字面的并集）来构造一个类型。
-{: #my-class}
 
 ### 二、对象属性只读 `Readonly`
 
