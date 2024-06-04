@@ -39,9 +39,9 @@ type MyPick<T, K extends keyof T> = {
 
 `Pick<Type, Keys>` 通过从 Type 中选取一组属性 Keys（字符串字面或字符串字面的并集）来构造一个类型。
 
-### 二、对象属性只读 `Readonly`
-
 {: #part-2}
+
+### 二、对象属性只读 `Readonly`
 
 ##### 不要使用内置的`Readonly<T>`，自己实现一个。
 
@@ -61,9 +61,9 @@ type MyReadonly<T> = {
 
 `Readonly<Type>` 构造一个将 Type 的所有属性设置为 `readonly` 的类型，这意味着构造类型的属性不能重新分配。
 
-### 三、元组转换为对象 `Tuple to Object`
-
 {: #part-3}
+
+### 三、元组转换为对象 `Tuple to Object`
 
 ##### 将一个元组类型转换为对象类型，这个对象类型的键/值和元组中的元素对应。
 
@@ -77,9 +77,9 @@ type TupleToObject<T extends readonly (keyof any)[]> = {
 
 元组的索引都是`number`类型的，所以可以一次全部取到所有元素的类型。
 
-### 四、第一个元素 `First of Array`
-
 {: #part-4}
+
+### 四、第一个元素 `First of Array`
 
 ##### 实现一个`First<T>`泛型，它接受一个数组`T`并返回它的第一个元素的类型。
 
@@ -103,9 +103,9 @@ type First<T extends any[]> = T extends [infer A, ...infer rest] ? A : never;
 
 `...infer rest` 用来表示剩余元素
 
-### 五、获取元组长度 `Length of Tuple`
-
 {: #part-5}
+
+### 五、获取元组长度 `Length of Tuple`
 
 ##### 创建一个`Length`泛型，这个泛型接受一个只读的元组，返回这个元组的长度。
 
@@ -117,9 +117,9 @@ type Length<T extends readonly unknown[]> = T["length"];
 type Length<T extends readonly any[]> = T extends { length: infer L } ? L : never;
 ```
 
-### 六、实现 Exclude `Exclude<T, U>`
-
 {: #part-6}
+
+### 六、实现 Exclude `Exclude<T, U>`
 
 ##### 实现内置的 `Exclude<T, U>` 类型，但不能直接使用它本身。
 

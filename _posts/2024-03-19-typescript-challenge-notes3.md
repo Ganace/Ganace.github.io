@@ -18,9 +18,9 @@ TypeScript 的类型体操笔记，温故知新。
 
 ## 中等挑战
 
-### 一、获取函数返回类型 `ReturnType<T>`
-
 {: #part-1}
+
+### 一、获取函数返回类型 `ReturnType<T>`
 
 ##### 不使用 `ReturnType` 实现 `TypeScript` 的 `ReturnType<T>` 泛型。
 
@@ -32,9 +32,9 @@ type MyReturnType<T extends (...args: any) => unknown> = T extends (...args: any
 
 `ReturnType<Type>` 构造一个由函数 `Type` 的返回类型组成的类型。
 
-### 二、实现 `Omit` `Omit<T, K>`
-
 {: #part-2}
+
+### 二、实现 `Omit` `Omit<T, K>`
 
 ##### 不使用 `Omit` 实现 `TypeScript` 的 `Omit<T, K>` 泛型。
 
@@ -50,9 +50,9 @@ type MyOmit<T, K extends keyof T> = {
 
 `Omit<Type, Keys>` 通过从 `Type` 中选择所有属性然后删除 `Keys`（字符串字面或字符串字面的并集）来构造一个类型。
 
-### 三、对象部分属性只读 `Readonly<T>`
-
 {: #part-3}
+
+### 三、对象部分属性只读 `Readonly<T>`
 
 ##### 实现一个泛型`MyReadonly2<T, K>`，它带有两种类型的参数`T`和`K`。
 
@@ -75,9 +75,9 @@ type MyReadonly2<T, K extends keyof T = keyof T> = {
 
 `Readonly<Type>` 构造一个将 `Type` 的所有属性设置为 `readonly` 的类型，这意味着构造类型的属性不能重新分配。
 
-### 四、对象属性只读（递归） `DeepReadonly<T>`
-
 {: #part-4}
+
+### 四、对象属性只读（递归） `DeepReadonly<T>`
 
 ##### 实现一个泛型 `DeepReadonly<T>`，它将对象的每个参数及其子对象递归地设为只读。
 
@@ -118,9 +118,9 @@ type DeepReadonly<T> = T extends Builtin
     : Readonly<T>;
 ```
 
-### 五、元组转合集 `TupleToUnion<T>`
-
 {: #part-5}
+
+### 五、元组转合集 `TupleToUnion<T>`
 
 ##### 实现泛型`TupleToUnion<T>`，它返回元组所有值的合集。
 
@@ -136,9 +136,9 @@ type TupleToUnion<T> = T extends (infer U)[] ? U : never;
 export type TupleToUnion<T> = T extends Array<infer U> ? U : never;
 ```
 
-### 六、可串联构造器
-
 {: #part-6}
+
+### 六、可串联构造器
 
 ##### 在 `JavaScript` 中我们经常会使用可串联（`Chainable/Pipeline`）的函数构造一个对象，但在 `TypeScript` 中，你能合理的给它赋上类型吗？
 

@@ -18,9 +18,9 @@ TypeScript 的类型体操笔记，温故知新。
 
 ## 中等挑战
 
-### 一、剔除指定字符 `Drop Char`
-
 {: #part-1}
+
+### 一、剔除指定字符 `Drop Char`
 
 ##### 从字符串中剔除指定字符。
 
@@ -28,9 +28,9 @@ TypeScript 的类型体操笔记，温故知新。
 type DropChar<S extends string, C extends string> = S extends `${infer L}${C}${infer R}` ? DropChar<`${L}${R}`, C> : S;
 ```
 
-### 二、数字减一 `MinusOne`
-
 {: #part-2}
+
+### 二、数字减一 `MinusOne`
 
 ##### 给定一个正整数作为类型的参数，要求返回的类型是该数字减 1。
 
@@ -58,9 +58,9 @@ type RevMinusOne<T extends string> = T extends `${infer F}${infer N}${infer R}`
 type MinusOne<T extends number> = Reverse<RevMinusOne<Reverse<`${T}`>>> extends `${infer Res extends number}` ? Res : 0;
 ```
 
-### 三、`PickByType`
-
 {: #part-3}
+
+### 三、`PickByType`
 
 ##### From `T`, pick a set of properties whose type are assignable to `U`.
 
@@ -83,9 +83,9 @@ type PickByType<T, U> = {
 };
 ```
 
-### 四、`StartsWith`
-
 {: #part-4}
+
+### 四、`StartsWith`
 
 ##### 实现`StartsWith<T, U>`,接收两个`string`类型参数,然后判断`T`是否以`U`开头,根据结果返回`true`或`false`
 
@@ -97,9 +97,9 @@ type StartsWith<T extends string, U extends string> = T extends `${U}${infer R}`
 type StartsWith<T extends string, U extends string> = T extends `${U}${string}` ? true : false;
 ```
 
-### 五、`EndsWith`
-
 {: #part-5}
+
+### 五、`EndsWith`
 
 ##### 实现`EndsWith<T, U>`,接收两个`string`类型参数,然后判断`T`是否以`U`结尾,根据结果返回`true`或`false`
 
@@ -107,9 +107,9 @@ type StartsWith<T extends string, U extends string> = T extends `${U}${string}` 
 type EndsWith<T extends string, U extends string> = T extends `${string}${U}` ? true : false;
 ```
 
-### 六、`PartialByKeys`
-
 {: #part-6}
+
+### 六、`PartialByKeys`
 
 ##### 实现一个通用的`PartialByKeys<T, K>`，它接收两个类型参数 T 和 K。
 

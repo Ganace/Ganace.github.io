@@ -18,9 +18,9 @@ TypeScript 的类型体操笔记，温故知新。
 
 ## 中等挑战
 
-### 一、为接口新增字段 `Append to object`
-
 {: #part-1}
+
+### 一、为接口新增字段 `Append to object`
 
 ##### 实现一个为接口添加一个新字段的类型。该类型接收三个参数，返回带有新字段的接口类型。
 
@@ -30,9 +30,9 @@ type AppendToObject<T extends Object, U extends keyof any, V> = {
 };
 ```
 
-### 二、返回正数字符串 `Absolute`
-
 {: #part-2}
+
+### 二、返回正数字符串 `Absolute`
 
 ##### 实现一个接收 string,number 或 bigInt 类型参数的 Absolute 类型,返回一个正数字符串。
 
@@ -42,9 +42,9 @@ type Absolute<T extends number | string | bigint> = `${T}` extends `-${infer R}`
 
 TypeScript 中，通过模板字符串将(`number` / `bigint` )数组转换为字符串时，编译器会自动进行转换
 
-### 三、字符串转字母 `String to Union`
-
 {: #part-3}
+
+### 三、字符串转字母 `String to Union`
 
 ##### 实现一个将接收到的`String`参数转换为一个字母`Union`的类型。
 
@@ -56,9 +56,9 @@ type StringToUnion<T extends string> = T extends `${infer L}${infer R}` ? L | St
 type StringToUnion<T extends string, U extends unknown[] = []> = T extends `${infer L}${infer R}` ? StringToUnion<R, [...U, L]> : U[number];
 ```
 
-### 四、类型合并 `Merge`
-
 {: #part-4}
+
+### 四、类型合并 `Merge`
 
 ##### 将两个类型合并成一个类型，第二个类型的键会覆盖第一个类型的键。
 
@@ -68,9 +68,9 @@ type Merge<F, S> = {
 };
 ```
 
-### 五、字母大小写转换和连接字符串 `KebabCase`
-
 {: #part-5}
+
+### 五、字母大小写转换和连接字符串 `KebabCase`
 
 ##### Replace the `camelCase` or `PascalCase` string with `kebab-case`.
 
@@ -87,9 +87,9 @@ type KebabCase<S extends string> = S extends `${infer F}${infer R}` ? (R extends
 `Capitalize<StringType>` 将字符串中的第一个字符转换为等效的大写字母。
 `Uncapitalize<StringType>` 将字符串中的第一个字符转换为等效的小写字母。
 
-### 六、两个接口类型的差值属性 `Diff`
-
 {: #part-6}
+
+### 六、两个接口类型的差值属性 `Diff`
 
 ##### 获取两个接口类型中的差值属性。
 

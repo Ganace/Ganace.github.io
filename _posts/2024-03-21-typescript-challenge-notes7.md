@@ -18,9 +18,9 @@ TypeScript 的类型体操笔记，温故知新。
 
 ## 中等挑战
 
-### 一、`AnyOf`
-
 {: #part-1}
+
+### 一、`AnyOf`
 
 ##### 类型系统中实现类似于 `Python` 中 `any` 函数。类型接收一个数组，如果数组中任一个元素为真，则返回 `true`，否则返回 `false`。如果数组为空，返回 `false`。
 
@@ -29,9 +29,9 @@ type Falsy = 0 | "" | false | [] | { [key: string]: never } | undefined | null;
 type AnyOf<T extends readonly any[]> = T[number] extends Falsy ? false : true;
 ```
 
-### 二、`IsNever`
-
 {: #part-2}
+
+### 二、`IsNever`
 
 ##### Implement a type `IsNever`, which takes input type `T`. If the type of resolves to `never`, return `true`, otherwise `false`.
 
@@ -50,9 +50,9 @@ type IsNever<T> = [T] extends [never] ? true : false;
 type IsNever<T> = T[] extends never[] ? true : false;
 ```
 
-### 三、`IsUnion`
-
 {: #part-3}
+
+### 三、`IsUnion`
 
 ##### Implement a type `IsUnion`, which takes an input type `T` and returns whether `T` resolves to a union type.
 
@@ -69,9 +69,9 @@ type IsUnion<T, C = T> = [T] extends [never] ? false : T extends C ? ([C] extend
 type IsUnion<T, C = T> = [T] extends [never] ? false : T extends T ? ([C] extends [T] ? false : true) : false;
 ```
 
-### 四、`ReplaceKeys`
-
 {: #part-4}
+
+### 四、`ReplaceKeys`
 
 ##### Implement a type `ReplaceKeys`, that replace keys in union types, if some type has not this key, just skip replacing, A type takes three arguments.
 
@@ -108,9 +108,9 @@ type ReplaceKeys<U, T, Y> = {
 };
 ```
 
-### 五、`Remove Index Signature`
-
 {: #part-5}
+
+### 五、`Remove Index Signature`
 
 ##### Implement `RemoveIndexSignature<T>` , exclude the index signature from object types.
 
@@ -130,9 +130,9 @@ type RemoveIndexSignature<T, P = PropertyKey> = {
 };
 ```
 
-### 六、`Percentage Parser`
-
 {: #part-6}
+
+### 六、`Percentage Parser`
 
 ##### 实现类型 PercentageParser。根据规则 /^(\+|\-)?(\d\*)?(\%)?$/ 匹配类型 T。
 

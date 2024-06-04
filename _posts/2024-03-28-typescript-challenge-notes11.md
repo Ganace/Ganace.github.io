@@ -18,9 +18,9 @@ TypeScript 的类型体操笔记，温故知新。
 
 ## 中等挑战
 
-### 一、斐波那契序列
-
 {: #part-1}
+
+### 一、斐波那契序列
 
 ##### Implement a generic `Fibonacci<T>` takes an number `T` and returns it's corresponding Fibonacci number.
 
@@ -41,9 +41,9 @@ type Fibonacci<T extends number, CurrentIndex extends any[] = [1], Prev extends 
     : Fibonacci<T, [...CurrentIndex, 1], Current, [...Prev, ...Current]>;
 ```
 
-### 二、`AllCombinations`
-
 {: #part-2}
+
+### 二、`AllCombinations`
 
 ##### Implement type `AllCombinations<S>` that return all combinations of strings which use characters from S at most once.
 
@@ -61,9 +61,9 @@ type StrToUnion<S> = S extends `${infer F}${infer R}` ? F | StrToUnion<R> : neve
 type AllCombinations<S extends string, U extends string = StrToUnion<S>> = [U] extends [never] ? "" : "" | { [K in U]: `${K}${AllCombinations<never, Exclude<U, K>>}` }[U];
 ```
 
-### 三、`GreaterThan`
-
 {: #part-3}
+
+### 三、`GreaterThan`
 
 ##### In This Challenge, You should implement a type `GreaterThan<T, U>` like `T` > `U`
 
@@ -96,9 +96,9 @@ type InnerGreaterThan<T extends number, U extends number> = T extends U ? true :
 type GreaterThan<T extends number, U extends number> = T extends U ? false : U extends 0 ? true : InnerGreaterThan<T, U>;
 ```
 
-### 四、`Zip`
-
 {: #part-4}
+
+### 四、`Zip`
 
 ##### In This Challenge, You should implement a type `Zip<T, U>`, T and U must be `Tuple`
 
@@ -108,9 +108,9 @@ type GreaterThan<T extends number, U extends number> = T extends U ? false : U e
 type Zip<T, U, Rt extends unknown[] = []> = T extends [infer F1, ...infer R1] ? (U extends [infer F2, ...infer R2] ? Zip<R1, R2, [...Rt, [F1, F2]]> : Rt) : Rt;
 ```
 
-### 五、`IsTuple`
-
 {: #part-5}
+
+### 五、`IsTuple`
 
 ##### Implement a type `IsTuple`, which takes an input type `T` and returns whether `T` is tuple type.
 
@@ -128,9 +128,9 @@ Answer:
 type IsTuple<T> = [T] extends [never] ? false : T extends readonly any[] ? (number extends T["length"] ? false : true) : false;
 ```
 
-### 六、`Chunk`
-
 {: #part-6}
+
+### 六、`Chunk`
 
 ##### Do you know `lodash`? `Chunk` is a very useful function in it, now let's implement it. `Chunk<T, N>` accepts two required type parameters, the `T` must be a `tuple`, and the `N` must be an `integer >=1`
 

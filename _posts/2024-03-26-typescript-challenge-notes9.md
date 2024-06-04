@@ -18,9 +18,9 @@ TypeScript 的类型体操笔记，温故知新。
 
 ## 中等挑战
 
-### 一、`RequiredByKeys`
-
 {: #part-1}
+
+### 一、`RequiredByKeys`
 
 ##### 实现一个通用的`RequiredByKeys<T, K>`，它接收两个类型参数`T`和`K`。
 
@@ -43,9 +43,9 @@ type RequiredByKeys<T, K extends PropertyKey = keyof T> = Merge<T & Required<Pic
 
 `Required<Type`>返回一个新类型，将参数类型`Type`的所有属性变为必选属性。它与`Partial<Type>`的作用正好相反。
 
-### 二、全部属性非只读 `Mutable`
-
 {: #part-2}
+
+### 二、全部属性非只读 `Mutable`
 
 ##### 实现一个通用的类型 `Mutable<T>`，使类型 `T` 的全部属性可变（非只读）。
 
@@ -61,9 +61,9 @@ type Mutable<T extends object> = {
 };
 ```
 
-### 三、属性排除 `OmitByType`
-
 {: #part-3}
+
+### 三、属性排除 `OmitByType`
 
 ##### From `T`, pick a set of properties whose type are not assignable to `U`.
 
@@ -86,9 +86,9 @@ type OmitByType<T, U> = {
 };
 ```
 
-### 四、`ObjectEntries`
-
 {: #part-4}
+
+### 四、`ObjectEntries`
 
 ##### Implement the type version of `Object.entries`
 
@@ -112,9 +112,9 @@ type ObjectEntries<T, U = Required<T>> = {
 
 `Required<Type>`返回一个新类型，将参数类型`Type`的所有属性变为必选属性。它与`Partial<Type>`的作用正好相反。
 
-### 五、`Shift`
-
 {: #part-5}
+
+### 五、`Shift`
 
 ##### Implement the type version of `Array.shift`
 
@@ -125,9 +125,9 @@ For example:
 type Shift<T extends unknown[]> = T extends [infer _, ...infer U] ? [...U] : T;
 ```
 
-### 六、`Tuple to Nested Object`
-
 {: #part-6}
+
+### 六、`Tuple to Nested Object`
 
 ##### Given a tuple type `T` that only contains string type, and a type `U`, build an object recursively.
 
